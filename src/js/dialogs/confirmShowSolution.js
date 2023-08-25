@@ -187,6 +187,16 @@ exports.dialog = {
       },
     },
   ],
+  'hu': [{
+    type: 'ModalAlert',
+    options: {
+      markdowns: [
+        '## Biztos meg akarod nézni a megoldást?',
+        '',
+        'Mi hiszünk benned! Meg tudod csinálni :)'
+      ]
+    }
+  }],
 };
 
 

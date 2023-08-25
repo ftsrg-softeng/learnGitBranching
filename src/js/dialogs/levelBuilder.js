@@ -364,5 +364,24 @@ exports.dialog = {
       },
     },
   ],
+  'hu': [{
+    type: 'ModalAlert',
+    options: {
+      markdowns: [
+        '## Üdvözlünk a szint szerkesztőben!',
+        '',
+        'Ezek a főbb lépések:',
+        '',
+        '  * Állítsd fel a kezdő állapotot git parancsok segítségével',
+        '  * Rögzítsd a kezdő állapotot (fát) a ```define start``` paranccsal',
+        '  * Írd be git parancsok egy sorozatát, ami az optimális megoldást írja le',
+        '  * Definiált az elérendő célt (fát) a ```define goal``` paranccsal. Ez egyben a megoldást is definiálja',
+        '  * Opcionálisan, adj meg segítséget a ```define hint``` paranccsal',
+        '  * Add meg a szint nevét a ```define name``` paranccsal',
+        '  * Opcionálisan, adj meg egy kezdő ablakot az ```edit dialog``` segítségével',
+        '  * Írd be a ```finish``` parancsot, hogy hozzájuss a szintedet leíró JSON-höz!'
+      ]
+    }
+  }],
 };
 

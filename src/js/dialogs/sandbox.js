@@ -815,4 +815,32 @@ exports.dialog = {
       },
     },
   ],
+  'hu': [{
+    type: 'ModalAlert',
+    options: {
+      markdowns: [
+        '## Üdvözlünk a Learn Git Branching oldalon',
+        '',
+        'Meg akarod tanulni a git használatát? Ha igen, akkor a jó helyre jöttél! ',
+        'A "Learn Git Branching" a legvizuálisabb és leginteraktívabb módja a git tanulásának. ',
+        'Az oldal különböző feladatokkal nyújt neked kihívást, ami lépésről-lépésre végigvezet ',
+        'a git hasznos funckcióin, és talán még szórakoztat is közben.',
+        '',
+        'Ezután az ablak után, az általunk kínált szinteket fogod megtalálni. Ha kezdő vagy, ',
+        'kezd az elején. Ha viszont már ismeret a git alapjait, megpróbálkozhatsz a haladó feladatainkkal is.',
+        '',
+        'Az elérhető parancsokat `show commands` paranccsal tudod lekérdezni a terminálban.',
+        '',
+        'UI: Legközelebb egyből sandbox módban alarod indítani?',
+        'Kattints ',
+        '[ide](https://ftsrg-softeng.github.io/learnGitBranching/?NODEMO&locale=hu)',
+        '',
+        'UUI: A GitHub elkezdte az alapértelmezett branch-et `main`-nek nevezni `master` helyett ',
+        'hogy átálljon a régi, sértő terminológiáról [(további információk itt)](https://github.com/github/renaming). ',
+        'Lekövetve az ipar alakulását, a "Learn Git Branching" oldal is átáll ',
+        'a `main` használatára a `master`helyett. Ez az átnevezés már végbe ment, ',
+        'de ha bárhol hibát fedezel fel, nyugodtan javítsd egy PR-ban (vagy nyiss issue-t).'
+      ]
+    }
+  }],
 };

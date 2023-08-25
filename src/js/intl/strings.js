@@ -20,7 +20,8 @@ exports.strings = {
     'sl_SI': 'Wow! Končal si zadnjo stopnjo, fantastično!',
     'pl': 'Wow! Ukończono ostatni poziom, świetnie!',
     'it_IT': "Wow! Hai concluso l'ultimo livello, grandioso!",
-    'ta_IN': 'ஆஹா! நீங்கள் கடைசி நிலையை முடித்துள்ளீர்கள், நன்று!'
+    'ta_IN': 'ஆஹா! நீங்கள் கடைசி நிலையை முடித்துள்ளீர்கள், நன்று!',
+    'hu'   : 'Nagyszerű! Sikeresen megoldottad a feladatot!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'finish-dialog-next': {
@@ -43,7 +44,8 @@ exports.strings = {
     'sl_SI': 'Bi rad nadaljeval na *"{nextLevel}"*, naslednjo stopnjo?',
     'pl': 'Czy chcesz przejść do następnego poziomu - *"{nextLevel}"*?',
     'it_IT': 'Ti andrebbe di passare al prossimo livello, *"{nextLevel}"*?',
-    'ta_IN': 'அடுத்த நிலை * "{nextLevel}" * க்கு செல்ல விரும்புகிறீர்களா?'
+    'ta_IN': 'அடுத்த நிலை * "{nextLevel}" * க்கு செல்ல விரும்புகிறீர்களா?',
+    'hu'   : 'Szeretnél továbbmenni a következő, *"{nextLevel}"* szintre?'
   },
   ///////////////////////////////////////////////////////////////////////////
   'finish-dialog-win': {
@@ -66,7 +68,8 @@ exports.strings = {
     'sl_SI': 'Bravo! Izenačil ali celo presegel si našo rešitev.',
     'pl': 'Niesamowite! Rozwiązałeś zadanie w ten sam sposób lub lepiej.',
     'it_IT': "Grandioso! Hai eguagliato o migliorato la nostra soluzione.",
-    'ta_IN': 'அருமை! எங்கள் கொடுக்க பட்ட தீர்வை நிறைவு செய்து விட்டீர்கள்.'
+    'ta_IN': 'அருமை! எங்கள் கொடுக்க பட்ட தீர்வை நிறைவு செய்து விட்டீர்கள்.',
+    'hu': 'Kiváló! A megoldásod legalább olyan jó, mint a mienk!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'finish-dialog-lose': {
@@ -89,7 +92,8 @@ exports.strings = {
     'sl_SI': 'Misliš da lahko spraviš rešitev na {best}? :D',
     'pl': 'Sprawdź, czy dasz radę to zrobić w {best} krokach :D',
     'it_IT': "Prova a migliorarti facendolo solo con {best} comandi :D",
-    'ta_IN': 'நீங்கள் அதை குறைக்க முடியுமா என்று பாருங்கள் {best} :D'
+    'ta_IN': 'நீங்கள் அதை குறைக்க முடியுமா என்று பாருங்கள் {best} :D',
+    'hu': 'Próbáld meg megoldani {best} lépésből :D'
   },
   ///////////////////////////////////////////////////////////////////////////
   'hg-prune-tree': {
@@ -112,7 +116,8 @@ exports.strings = {
     'pl': 'Ostrzeżenie! Mercurial prowadzi agresywną kolekcję śmieci i dlatego musi przycinać Twoje drzewo',
      'it_IT':
       "Attenzione! Mercurial ha un garbage collector molto aggressivo e perciò deve potare il tuo albero",
-    'ta_IN': 'எச்சரிக்கை! மெர்குரியல் வலிய களிவு சேகரிப்பு செய்கிறது, இதனால் உங்கள் மரத்தை கத்தரிக்க வேண்டிவரும்'
+    'ta_IN': 'எச்சரிக்கை! மெர்குரியல் வலிய களிவு சேகரிப்பு செய்கிறது, இதனால் உங்கள் மரத்தை கத்தரிக்க வேண்டிவரும்',
+    'hu': 'Figyelem! A Mercurial-nak agresszív garbage collection-t használ, és meg kell tisztítania a fádat!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'hg-a-option': {
@@ -134,7 +139,8 @@ exports.strings = {
     'sl_SI': 'Opcija -A ni potrebna za to aplikacijo, samo commitaj!',
     'pl': 'Opcja -A nie jest wymagana w tej aplikacji, po prostu zrób `commit`!',
     'it_IT': "L'opzione -A non è necessiaria, fai semplicemente commit!",
-    'ta_IN': 'இந்த பயன்பாட்டிற்கு -A மாற்று தேவையில்லை, `கமிட்` செய்யுங்கள்'
+    'ta_IN': 'இந்த பயன்பாட்டிற்கு -A மாற்று தேவையில்லை, `கமிட்` செய்யுங்கள்',
+    'hu'   : 'Az -A kapcsolóra nem lesz szükség ebben az app-ban. Commit-álj nélküle!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'hg-error-no-status': {
@@ -157,7 +163,8 @@ exports.strings = {
     'pl' : 'W tej aplikacji nie ma polecenia `status`, ponieważ nie ma przemieszczania plików. Zamiast tego wypróbuj `hg summary`',
     'it_IT':
       "Non esiste il comando status in quest'app, visto che non esiste lo staging dei file. Prova invece `hg summary`",
-    'ta_IN': 'கோப்புகள் எதுவும் அடுத்த படிநிலையில் இல்லை என்பதால், இந்த பயன்பாட்டிற்கான மதிப்பீடும் கட்டளை எதுவும் இல்லை. அதற்கு பதிலாக `hg summary` முயற்சிக்கவும்'
+    'ta_IN': 'கோப்புகள் எதுவும் அடுத்த படிநிலையில் இல்லை என்பதால், இந்த பயன்பாட்டிற்கான மதிப்பீடும் கட்டளை எதுவும் இல்லை. அதற்கு பதிலாக `hg summary` முயற்சிக்கவும்',
+    'hu'   : 'Nincs status parancs az app-ban, hiszen nem dolgozunk fájlokkal. Használg a hg summary parancsot inkább!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'hg-error-need-option': {
@@ -179,7 +186,8 @@ exports.strings = {
     'sl_SI': 'Potrebujem opcijo {option} za ta ukaz!',
     'pl': 'Potrzebuję opcji {option} dla tego polecenia!',
     'it_IT': "Ho bisogno di {option} per quel comando!",
-    'ta_IN': 'எனக்கு அந்த கட்டளைக்கு மாற்று {option} தேவை'
+    'ta_IN': 'எனக்கு அந்த கட்டளைக்கு மாற்று {option} தேவை',
+    'hu'   : 'Kérlek add meg a {option} kapcsolót a parancshoz!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'hg-error-log-no-follow': {
@@ -201,7 +209,8 @@ exports.strings = {
     'sl_SI': 'hg log brez -f trenutno ni podprt, uporabi -f',
     'pl': '`hg log` bez -f nie jest obecnie obsługiwany, użyj -f',
     'it_IT': "hg log senza -f non è attualmente supportato, usa -f",
-    'ta_IN': '-f இல்லாமல் `hg log` தற்போது ஆதரிக்கப்படவில்லை, -f ஐப் பயன்படுத்தவும்'
+    'ta_IN': '-f இல்லாமல் `hg log` தற்போது ஆதரிக்கப்படவில்லை, -f ஐப் பயன்படுத்தவும்',
+    'hu'   : 'Jelenleg nem támogatjuk a hg log parancsot a -f kapcsoló nélkül. Kérlek használd a -f kapcsolót!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-status-detached': {
@@ -223,7 +232,8 @@ exports.strings = {
     'sl_SI': 'Detached head!',
     'pl': 'Odłączono HEAD!',
     'it_IT': "Testa distaccata (Detached head)!",
-    'ta_IN': 'பிரிக்கப்பட்ட தலை!'
+    'ta_IN': 'பிரிக்கப்பட்ட தலை!',
+    'hu'   : 'Detached head!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-status-onbranch': {
@@ -245,7 +255,8 @@ exports.strings = {
     'sl_SI': 'Na branchu {branch}',
     'pl': 'Na branch-u {branch}',
     'it_IT': "Sul ramo {branch}",
-    'ta_IN': '{branch} கிளையில்'
+    'ta_IN': '{branch} கிளையில்',
+    'hu'   : '{branch} branch-en'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-status-readytocommit': {
@@ -267,7 +278,8 @@ exports.strings = {
     'sl_SI': 'Pripravljen za commit! (kot vedno v tem demotu)',
     'pl': 'Gotowy commit! (jak zawsze w tym demo)',
     'it_IT': "Pronto al commit! (come sempre in questa demo)",
-    'ta_IN': '`commit` செய்ய தயார்! (இந்த செயல் விளக்கத்தில் எப்போதும் செய்வதை போல)'
+    'ta_IN': '`commit` செய்ய தயார்! (இந்த செயல் விளக்கத்தில் எப்போதும் செய்வதை போல)',
+    'hu'   : 'Commit-álásra készen! (Mint mindig ebben az app-ban ;-) )'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-dummy-msg': {
@@ -290,7 +302,8 @@ exports.strings = {
     'sl_SI': 'Hiter commit.',
     'pl': 'Szybki commit.',
     'it_IT': "Laura I love you, but our dogs too (Barone & Duchessa)!",
-    'ta_IN': 'Quick commit. Go Bears!'
+    'ta_IN': 'Quick commit. Go Bears!',
+    'hu'   : 'Egy gyors commit!'
   },
   'git-error-origin-fetch-uptodate': {
     '__desc__': 'One of the error messages for git',
@@ -311,7 +324,8 @@ exports.strings = {
     'sl_SI': 'Že posodobljeno!',
     'pl': 'Już aktualne!',
     'it_IT': "E' gia la versione più recente!",
-    'ta_IN': 'ஏற்கனவே புதுப்பித்த நிலையில் உள்ளது!'
+    'ta_IN': 'ஏற்கனவே புதுப்பித்த நிலையில் உள்ளது!',
+    'hu'   : 'Már naprakész!'
   },
   'git-error-origin-fetch-no-ff': {
     '__desc__': 'One of the error messages for git',
@@ -333,7 +347,8 @@ exports.strings = {
     'pl': 'Twój branch nie jest zsynchronizowany ze zdalny branch-em i nie można przeprowadzić pobierania',
     'it_IT':
       "Il tuo ramo origin non è sincronizzato con il ramo remoto, e fetch non può essere eseguito",
-    'ta_IN': 'உங்கள் மூலக் கிளை தொலைநிலைக் கிளையுடன் ஓருங்கினைக்கப்படவில்லை. `fetch` செய்ய முடியாது'
+    'ta_IN': 'உங்கள் மூலக் கிளை தொலைநிலைக் கிளையுடன் ஓருங்கினைக்கப்படவில்லை. `fetch` செய்ய முடியாது',
+    'hu'   : 'Az origin branch-ed nincs szinkronban a távoli (remote) branch-eddel, ezért a fetch nem végezhető el!'
   },
   'git-error-origin-push-no-ff': {
     '__desc__': 'One of the error messages for git',
@@ -355,7 +370,8 @@ exports.strings = {
     'pl'   : 'Zdalne repozytorium różni się od lokalnego repozytorium, dlatego twoich zmian nie można przesłać za pomocą prostego szybkiego `fast forward` (i dlatego polecenie `push` zostało odrzucone). Najpierw zrób `pull` aby pobrać nowe zmiany do lokalnego repozytorium, zintegruj je z branch-em i spróbuj ponownie. Możesz to zrobić za pomocą `git pull` lub `git pull --rebase`',
     'it_it':
       "Il repository remoto è diverso dal tuo repository locale, quindi il caricamento non è un semplice fast forward (e per questo il tuo push è fallito). Per favore esegui pull per scaricare i nuovi cambiamenti dal repository remoto, incorporarli in questo ramo, e provare ancora. Puoi effettuarlo tramite i comandi git pull o git pull --rebase",
-    'ta_IN': 'தொலைநிலை களஞ்சியம் உங்கள் களஞ்சியத்திலிருந்து வேறுபட்டுள்ளது, எனவே உங்கள் மாற்றங்களை எளிமையான `fast forward` முறையில் பதிவேற்ற இயலாது (இதனால் உங்கள் `push` நிராகரிக்கப்பட்டது). தொலை களஞ்சியத்தில் புதிய மாற்றங்களை `pull` செய்து, அவற்றை இந்த கிளையில் இணைத்து, மீண்டும் முயற்சிக்கவும். நீங்கள் அவ்வாறு `git pull` அல்லது `git pull --rebase` கட்டளை கொண்டு செய்யலாம்'
+    'ta_IN': 'தொலைநிலை களஞ்சியம் உங்கள் களஞ்சியத்திலிருந்து வேறுபட்டுள்ளது, எனவே உங்கள் மாற்றங்களை எளிமையான `fast forward` முறையில் பதிவேற்ற இயலாது (இதனால் உங்கள் `push` நிராகரிக்கப்பட்டது). தொலை களஞ்சியத்தில் புதிய மாற்றங்களை `pull` செய்து, அவற்றை இந்த கிளையில் இணைத்து, மீண்டும் முயற்சிக்கவும். நீங்கள் அவ்வாறு `git pull` அல்லது `git pull --rebase` கட்டளை கொண்டு செய்யலாம்',
+    'hu'   : 'A távoli repository eltér a lokális repository-tól, a változtatások feltöltése nem történhet fast forward segítségével (ezért a push elutasításra került). Kérlek pull segítségével töltsd le a távoli repository-ban lévő változtatásokat erre a branch-re, majd próbáld újra. Ezt a git pull vagy a git pull --rebase segítségével tudod megtenni!'
   },
   'git-error-remote-branch': {
     '__desc__': 'One of the error messages for git',
@@ -376,7 +392,8 @@ exports.strings = {
     'sl_SI': 'Tega ukaza ne moreš narediti na oddaljenem branchu',
     'pl'   : 'Nie możesz wykonać tego polecenia w zdalnej gałęzi',
     'it_it': "Non puoi eseguire questo comando su un ramo remoto",
-    'ta_IN': 'அந்த கட்டளையை நீங்கள் தொலைநிலை கிளையில் இயக்க முடியாது'
+    'ta_IN': 'அந்த கட்டளையை நீங்கள் தொலைநிலை கிளையில் இயக்க முடியாது',
+    'hu'   : 'Ezt a parancsot nem futtathatod távoli (remote) branch-en'
   },
   'git-error-origin-required': {
     '__desc__': 'One of the error messages for git',
@@ -397,7 +414,8 @@ exports.strings = {
     'sl_SI': 'Origin je potreben za izvedbo tega ukaza',
     'pl'   : 'Dla tego polecenia wymagane jest źródło (origin)',
     'it_IT': "E' necessario definire origin per questo comando",
-    'ta_IN': 'அந்த கட்டளைக்கு ஒரு துவக்க மூலம் தேவை'
+    'ta_IN': 'அந்த கட்டளைக்கு ஒரு துவக்க மூலம் தேவை',
+    'hu'   : 'Egy origin-re szüksége van a parancsnak'
   },
   'git-error-origin-exists': {
     '__desc__': 'One of the error messages for git',
@@ -418,7 +436,8 @@ exports.strings = {
     'sl_SI': 'Origin že obstaja. Ne moreš narediti novega.',
     'pl'   : 'Origin już istnieje! Nie możesz go ponownie założyć',
     'it_IT': "Origin già esistente! Non puoi crearne uno nuovo",
-    'ta_IN': 'துவக்க மூலம் ஒன்று ஏற்கனவே உள்ளது! நீங்கள் மீன்டும் ஒன்றை உருவாக்க முடியாது'
+    'ta_IN': 'துவக்க மூலம் ஒன்று ஏற்கனவே உள்ளது! நீங்கள் மீன்டும் ஒன்றை உருவாக்க முடியாது',
+    'hu'   : 'Már létezik egy origin, nem hozhatsz újat létre!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-error-branch': {
@@ -443,7 +462,8 @@ exports.strings = {
       'it_IT':
       "Non puoi eliminare il ramo main, il ramo in cui sei, o cose che " +
       "non sono rami",
-    'ta_IN': 'பிரதான கிளை, தற்ப்போது நடப்பில் உள்ள கிளை மற்றும் கிளை அல்லாத வற்றை அழிக்க இயலாது'
+    'ta_IN': 'பிரதான கிளை, தற்ப்போது நடப்பில் உள்ள கிளை மற்றும் கிளை அல்லாத வற்றை அழிக்க இயலாது',
+    'hu'   : 'Nem törölheted a main branch-et, azt a branch-et amin éppen tartózkodsz, illetve azokat, amik nem is branch-ek'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-merge-msg': {
@@ -465,7 +485,8 @@ exports.strings = {
     'sl_SI': 'Mergaj {target} v {current}',
     'pl'   : 'Łączenie {target} z {current}',
     'it_IT': "Fuso {target} in {current}",
-    'ta_IN': '{target}ஐ {current} கிளையுடன் இணை'
+    'ta_IN': '{target}ஐ {current} கிளையுடன் இணை',
+    'hu'   : 'Merge: {target} beolvasztása {current}-be'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-error-rebase-none': {
@@ -488,7 +509,8 @@ exports.strings = {
     'pl'   : 'Nie znaleziono commit-u do zmiany! Wszystkie commit-y oraz scalenia lub zmiany już są zastosowane',
     'it_IT':
       "Non ci sono commit da ribasare! Sono tutti commit di merge o i cambiamenti sono già stati applicati",
-    'ta_IN': '`rebase` செய்ய எந்த கமிட்டும் இல்லை, அனைத்தும் இணைப்பு கமிட்கள் அல்லது முன்பே இணைக்கப்பட்டவை'
+    'ta_IN': '`rebase` செய்ய எந்த கமிட்டும் இல்லை, அனைத்தும் இணைப்பு கமிட்கள் அல்லது முன்பே இணைக்கப்பட்டவை',
+    'hu'   : 'Nincs commit, amit rebase-elni lehetne. Minden egy merge commit, vagy csak meglévő változtatásokat tartalmaz'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-result-nothing': {
@@ -510,7 +532,8 @@ exports.strings = {
     'sl_SI': 'Ničesar za narediti ...',
     'pl'   : 'Nie ma nic do zrobienia...',
     'it_IT': "Niente da fare...",
-    'ta_IN': 'செய்வதற்க்கு ஒன்றும் இல்லை...'
+    'ta_IN': 'செய்வதற்க்கு ஒன்றும் இல்லை...',
+    'hu'   : 'Nincs mit csinálni...'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-result-fastforward': {
@@ -532,7 +555,8 @@ exports.strings = {
     'sl_SI': 'Fast forwardiranje',
     'pl'   : 'Fast forward...',
     'it_it': "Fast forwarding...",
-    'ta_IN': 'Fast forward...'
+    'ta_IN': 'Fast forward...',
+    'hu'   : 'Fast forward...'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-result-uptodate': {
@@ -554,7 +578,8 @@ exports.strings = {
     'sl_SI': 'Branch je že posodobljen',
     'pl'   : 'Branch jest już aktualny',
     'it_IT': "Il ramo è già aggiornato",
-    'ta_IN': 'இந்த கிளை ஏற்கனவே புதுப்பித்த நிலையில் உள்ளது...'
+    'ta_IN': 'இந்த கிளை ஏற்கனவே புதுப்பித்த நிலையில் உள்ளது...',
+    'hu': 'A branch már naprakész'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-error-exist': {
@@ -576,7 +601,8 @@ exports.strings = {
     'sl_SI': 'Ref {ref} new obstaja ali je neznan',
     'pl'   : 'Odnośnik {ref} nie istnieje lub jest nieznany',
     'it_IT': "Il riferimento (ref) {ref} non esiste o è sconosciuto",
-    'ta_IN': '{ref} இல்லை அல்லது தெரியவில்லை'
+    'ta_IN': '{ref} இல்லை அல்லது தெரியவில்லை',
+    'hu'   : 'A {ref} hivatkozás nem létezik vagy ismeretlen'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-error-relative-ref': {
@@ -598,7 +624,8 @@ exports.strings = {
     'sl_SI': 'Commit {commit} nima {match}',
     'pl'   : 'Commit {commit} nie ma {match}',
     'it_IT': "Il commit {commit} non ha un {match}",
-    'ta_IN': '{commit}க்கு {match} எதுவும் இல்லை'
+    'ta_IN': '{commit}க்கு {match} எதுவும் இல்லை',
+    'hu'   : 'A {commit} commit-nak nincs {match}'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-warning-detached': {
@@ -620,7 +647,8 @@ exports.strings = {
     'sl_SI': 'Opozorilo! Detached HEAD stanje',
     'pl'   : 'Ostrzeżenie!! Odłączony tryb HEAD',
     'it_IT': "Attenzione!! Situazione di testa distaccata (Detached HEAD)",
-    'ta_IN': 'எச்சரிக்கை !! `HEAD` துன்டிக்கப்பட்ட நிலையில் உள்ளது'
+    'ta_IN': 'எச்சரிக்கை !! `HEAD` துன்டிக்கப்பட்ட நிலையில் உள்ளது',
+    'hu'   : 'Figyelem! Detached HEAD állapot'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-warning-add': {
@@ -642,7 +670,8 @@ exports.strings = {
     'sl_SI': 'Ni potrebe po dodajanju datotetk v tem demotu',
     'pl'   : 'Nie ma potrzeby dodawania plików w tym demo',
     'it_IT': "Non c'è bisogno di aggiungere file in questa demo",
-    'ta_IN': 'இந்த நடைமுறையில் கோப்புகளை சேர்க்க தேவையில்லை'
+    'ta_IN': 'இந்த நடைமுறையில் கோப்புகளை சேர்க்க தேவையில்லை',
+    'hu'   : 'Ebben az app-ban nem kell használni az add parancsot'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-error-options': {
@@ -664,7 +693,8 @@ exports.strings = {
     'sl_SI': 'Opcije, ki si jih podal, so nezdružljive ali napačne',
     'pl'   : 'Podane przez Ciebie opcje są niezgodne lub nieprawidłowe',
     'it_IT': "Le opzioni che hai specificato sono incompatibili o sbagliate",
-    'ta_IN': 'நீங்கள் குறிப்பிட்ட அந்த மற்றிகள் பொருந்தாது அல்லது தவறானவை'
+    'ta_IN': 'நீங்கள் குறிப்பிட்ட அந்த மற்றிகள் பொருந்தாது அல்லது தவறானவை',
+    'hu'   : 'A megadott kapcsolók nem kompatibilisek vagy hibásak'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-error-already-exists': {
@@ -686,7 +716,8 @@ exports.strings = {
     'sl_SI': 'Commit {commit} že obstaja v tvoji množici sprememb, prekinjam!',
     'pl'   : 'Commit {commit} już istnieje w Twoim zbiorze zmian, przerywam!',
     'it_IT': "Il commit {commit} è già presente, annullo!",
-    'ta_IN': '{commit} உங்கள் மாற்றங்களின் தொகுப்பில் ஏற்கனவே உள்ளது, கட்டளை கைவிடப்பட்டது!'
+    'ta_IN': '{commit} உங்கள் மாற்றங்களின் தொகுப்பில் ஏற்கனவே உள்ளது, கட்டளை கைவிடப்பட்டது!',
+    'hu'   : 'A {commit} commit már létezik. Folyamat megszakítva!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-error-reset-detached': {
@@ -709,7 +740,8 @@ exports.strings = {
     'pl'   : 'Nie można zresetować w odłączonej HEAD! Użyj opcji `checkout`, jeśli chcesz się przenieść',
     'it_IT':
       "Non posso fare reset in modalità testa distaccata (detached head)! Utilizza checkout se vuoi spostarti",
-    'ta_IN': 'பிரிக்கப்பட்ட தலையில் மீட்டமைக்க முடியாது! நீங்கள் நகர்த்த விரும்பினால் `checkout` பயன்படுத்தவும்'
+    'ta_IN': 'பிரிக்கப்பட்ட தலையில் மீட்டமைக்க முடியாது! நீங்கள் நகர்த்த விரும்பினால் `checkout` பயன்படுத்தவும்',
+    'hu'   : 'Detached HEAD állapotban nem használható a reset parants. Használd a checkout-ot ha mozogni akarsz!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-warning-hard': {
@@ -744,7 +776,9 @@ exports.strings = {
       "l'opzione di default è --mixed.",
     'ta_IN': 'The default behavior for resets on LearnGitBranching is a --hard, so feel free to omit ' +
       'that option if you get tired of typing it out in our lessons. Just remember that the default ' +
-      'behavior on actual Git is --mixed.'
+      'behavior on actual Git is --mixed.',
+    'hu'   : 'Ebben az app-ban az alapértelmezett reset viselkedés a --hard, szóval hagyd el a kapcsolót nyugodtan. ' +
+      'Csak jegyezd meg, hogy a valódi Git esetében --mixed az alapértelmezett viselkedés.'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-error-staging': {
@@ -769,7 +803,8 @@ exports.strings = {
      'it_IT':
       "Non esiste il concetto di aggiungere / indicizzare i file, quindi quell'opzione o " +
       "comando non è valido!",
-    'ta_IN': 'கோப்புகளைச் சேர்ப்பது / நிலைநிறுத்துவது என்ற கருத்து ஒன்றும் இல்லை, எனவே அந்த மற்றி அல்லது கட்டளை தவறானது'
+    'ta_IN': 'கோப்புகளைச் சேர்ப்பது / நிலைநிறுத்துவது என்ற கருத்து ஒன்றும் இல்லை, எனவே அந்த மற்றி அல்லது கட்டளை தவறானது',
+    'hu'   : 'Ez az app nem dolgozik fáljokkal, nincs benne staging. Ezért ez a kapcsoló vagy parancs nem szükséges!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-revert-msg': {
@@ -791,7 +826,8 @@ exports.strings = {
     'sl_SI': 'Revertanje {oldCommit}: {oldMsg}',
     'pl'   : 'Cofam {oldCommit} : {oldMsg}',
     'it_IT': "Ripristino {oldCommit}: {oldMsg}",
-    'ta_IN': '{oldCommit}: {oldMsg} மீன்டும் மாற்றியமைக்கிறது'
+    'ta_IN': '{oldCommit}: {oldMsg} மீன்டும் மாற்றியமைக்கிறது',
+    'hu'   : '{oldCommit} visszavonva (revert): {oldMsg}'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-error-args-many': {
@@ -813,7 +849,8 @@ exports.strings = {
     'sl_SI': 'Pričakovanih je največ {upper} argumentov za {what}',
     'pl'   : 'Oczekuję maksymalne {upper} parametrów dla {what}',
     'it_IT': "Mi aspetto al massimo {upper} parametro/i per {what}",
-    'ta_IN': 'நான் {what}க்கான உள்ளீடு(கள்) அதிகபட்சமாக {upper} எதிர்பார்க்கிறேன்'
+    'ta_IN': 'நான் {what}க்கான உள்ளீடு(கள்) அதிகபட்சமாக {upper} எதிர்பார்க்கிறேன்',
+    'hu'   : 'A {what} legfeljebb {upper} argumentumot fogad'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-error-args-few': {
@@ -835,7 +872,8 @@ exports.strings = {
     'sl_SI': 'Pričakovanih je najmanj {lower} argumentov za {what}',
     'pl'   : 'Oczekuję co najmniej {lower} parametrów dla {what}',
     'it_IT': "Mi aspetto come minimo {lower} parametro/i per {what}",
-    'ta_IN': 'நான் {what}க்கான உள்ளீடு(கள்) குறைந்தபட்சம் {lower} எதிர்பார்க்கிறேன்'
+    'ta_IN': 'நான் {what}க்கான உள்ளீடு(கள்) குறைந்தபட்சம் {lower} எதிர்பார்க்கிறேன்',
+    'hu'   : 'A {what} legalább {lower} argumentumot igényel'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-error-no-general-args': {
@@ -857,7 +895,8 @@ exports.strings = {
     'sl_SI': 'Ta ukaz ne sprejme splošnih ukazov',
     'pl'   : 'To polecenie nie przyjmuje żadnych ogólnych parametrów',
     'it_IT': "Quel comando non accetta parametri generici",
-    'ta_IN': 'அந்த கட்டளை பொதுவான உள்ளீடு எதுவும் ஏற்கவில்லை'
+    'ta_IN': 'அந்த கட்டளை பொதுவான உள்ளீடு எதுவும் ஏற்கவில்லை',
+    'hu'   : 'Ez a parancs nem fogad argumentumot'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-error-command-not-supported': {
@@ -867,7 +906,8 @@ exports.strings = {
     'zh_TW': '很抱歉，目前無法支援指令 "{command}"!',
     'it_IT': 'Mi spiace, il comando "{command}" non è supportato.',
     'pl' : 'Polecenie "{command}" niestety nie jest obsługiwane.',
-    'vi': 'Xin lỗi, lệnh "{command}" không được hỗ trợ!'
+    'vi': 'Xin lỗi, lệnh "{command}" không được hỗ trợ!',
+    'hu' : 'A "{command}" parancs nincs támogatva!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'copy-tree-string': {
@@ -889,7 +929,8 @@ exports.strings = {
     'sl_SI': 'Skopiraj besedilo drevesa spodaj',
     'pl'   : 'Skopiuj poniższy kod',
     'it_IT': "Copia il codice dell'albero qua sotto",
-    'ta_IN': '`tree string`ஐ கீழே நகலெடுக்கவும்'
+    'ta_IN': '`tree string`ஐ கீழே நகலெடுக்கவும்',
+    'hu'   : 'Másold ki a fát leíró szöveget'
   },
   ///////////////////////////////////////////////////////////////////////////
   'learn-git-branching': {
@@ -912,7 +953,8 @@ exports.strings = {
     'sl_SI': 'Nauči se Git Branching',
     'pl': 'Naucz się Git Branching-u',
     'it_IT': "Impara Git Branching",
-    'ta_IN': 'கிட் கிளை அமைத்தல்'
+    'ta_IN': 'கிட் கிளை அமைத்தல்',
+    'hu'   : 'Tanuljunk Git-et! (Learn Git Branching)'
   },
   ///////////////////////////////////////////////////////////////////////////
   'select-a-level': {
@@ -934,7 +976,8 @@ exports.strings = {
     'sl_SI': 'Izberi stopnjo',
     'pl': 'Wybierz poziom',
     'it_IT': "Scegli un livello",
-    'ta_IN': 'ஒரு நிலையை தேர்வு செய்யுங்கள்'
+    'ta_IN': 'ஒரு நிலையை தேர்வு செய்யுங்கள்',
+    'hu': 'Válassz egy szintet'
   },
   ///////////////////////////////////////////////////////////////////////////
   'main-levels-tab': {
@@ -952,7 +995,8 @@ exports.strings = {
     'sl_SI': 'Glavno',
     'pl': 'Główny',
     'it_IT': "Menu",
-    'ta_IN': 'பிரதானம்'
+    'ta_IN': 'பிரதானம்',
+    'hu'   : 'Lokális'
   },
   ///////////////////////////////////////////////////////////////////////////
   'remote-levels-tab': {
@@ -970,7 +1014,8 @@ exports.strings = {
     'sl_SI': 'Oddaljeno',
     'pl'   : 'Zdalny',
     'it_IT': "Remoto",
-    'ta_IN': 'தொலைநிலை'
+    'ta_IN': 'தொலைநிலை',
+    'hu'   : 'Távoli'
   },
   ///////////////////////////////////////////////////////////////////////////
   'branch-name-short': {
@@ -993,7 +1038,8 @@ exports.strings = {
     'pl': 'Przepraszamy, ze względu na wizualizacje musimy zachować krótkie nazwy gałęzi. Nazwa Twojej gałęzi została skrócona do 9 znaków, w wyniku czego otrzymano "{branch}"',
     'it_IT':
       'Scusa ma i nomi dei rami devono essere brevi per essere visualizzati. Il nome del tuo ramo è stato accorciato a 9 caratteri, rinominandolo come "{branch}"',
-    'ta_IN': 'மன்னிக்கவும், காட்சிகளுக்கு கிளை பெயர்களை குறுகியதாக வைத்திருக்க வேண்டி உள்ளது. உங்கள் கிளையின் பெயர் 9 எழுத்துகளாக சுருக்கப்பட்டு, "{branch}" ஆக மற்றப்பட்டுள்ளது'
+    'ta_IN': 'மன்னிக்கவும், காட்சிகளுக்கு கிளை பெயர்களை குறுகியதாக வைத்திருக்க வேண்டி உள்ளது. உங்கள் கிளையின் பெயர் 9 எழுத்துகளாக சுருக்கப்பட்டு, "{branch}" ஆக மற்றப்பட்டுள்ளது',
+    'hu'   : 'A megjelenés miatt lerövidítettük a branch-ed nevét 9 karakteresre: "{branch}"'
   },
   ///////////////////////////////////////////////////////////////////////////
   'bad-branch-name': {
@@ -1015,7 +1061,8 @@ exports.strings = {
     'sl_SI': 'To ime brancha "{branch}" ni dovoljeno!',
     'pl': 'Ta nazwa gałęzi "{branch}" jest niedozwolona!',
     'it_IT': 'Il nome "{branch}" per i rami non è consentito!',
-    'ta_IN': '"{branch}" ஐ கிளையின் பெயராக ஏற்க்க இயலாது!'
+    'ta_IN': '"{branch}" ஐ கிளையின் பெயராக ஏற்க்க இயலாது!',
+    'hu'   : 'A "{branch}" branch név nem megengedett!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'bad-tag-name': {
@@ -1037,7 +1084,8 @@ exports.strings = {
     'sl_SI': 'To ime tag-a "{tag}" ni dovoljeno!',
     'pl': 'Ta nazwa tagu "{tag}" jest niedozwolona!',
     'it_IT': 'Il nome "{tag}" per i tag non è consentito!',
-    'ta_IN': '"{tag}" ஐ குறிச்சொல் பெயராக ஏற்க்க இயலாது!'
+    'ta_IN': '"{tag}" ஐ குறிச்சொல் பெயராக ஏற்க்க இயலாது!',
+    'hu'   : 'A "{tag}" tag név nem megengedett!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'option-not-supported': {
@@ -1059,7 +1107,8 @@ exports.strings = {
     'sl_SI': 'Opcija "{option}" ni podprta! ',
     'pl': 'Opcja "{option}" nie jest obsługiwana!',
     'it_IT': 'L\'opzione "{option}" non è supportata!',
-    'ta_IN': '"{option}" மாற்று செயல் ஆதரிக்கப்படவில்லை!'
+    'ta_IN': '"{option}" மாற்று செயல் ஆதரிக்கப்படவில்லை!',
+    'hu': 'A "{option}" kapcsoló nincs támogatva!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-usage-command': {
@@ -1081,7 +1130,8 @@ exports.strings = {
     'sl_SI': 'git <ukaz> [<argumenti>]',
     'pl': 'git <polecenie> [<parametry>]',
     'it_IT': "git <command> [<args>]",
-    'ta_IN': 'git <command> [<args>]'
+    'ta_IN': 'git <command> [<args>]',
+    'hu'   : 'git <parancs> [<argumentumok>]'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-supported-commands': {
@@ -1103,7 +1153,8 @@ exports.strings = {
     'sl_SI': 'Podprti ukazi:',
     'pl': 'Obsługiwane polecenia:',
     'it_IT': "Comandi supportati:",
-    'ta_IN': 'செயலாக்கம் உள்ள கட்டளைகள்;'
+    'ta_IN': 'செயலாக்கம் உள்ள கட்டளைகள்;',
+    'hu'   : 'Támogatott parancsok:'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-usage': {
@@ -1125,7 +1176,8 @@ exports.strings = {
     'sl_SI': 'Uporaba:',
     'pl': 'Użyj',
     'it_IT': "Utilizzo:",
-    'ta_IN': 'பயன்பாடு'
+    'ta_IN': 'பயன்பாடு',
+    'hu'   : 'Használat:'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-version': {
@@ -1147,7 +1199,8 @@ exports.strings = {
     'sl_SI': 'Git Verzija PCOTTLE.1.0',
     'pl' : 'Wersja GIT-a OLSZA-YSC-1.0',
     'it_IT': "Git Version SHARDANA_SOFT.1.0.0",
-    'ta_IN': 'Git Version PCOTTLE.1.0'
+    'ta_IN': 'Git Version PCOTTLE.1.0',
+    'hu'   : 'Git verzió PCOTTLE.1.0'
   },
   ///////////////////////////////////////////////////////////////////////////
   'flip-tree-command': {
@@ -1169,7 +1222,8 @@ exports.strings = {
     'sl_SI': 'Obračanje drevesa ...',
     'pl'   : 'Odwracanie drzewa...',
     'it_IT': "Girando l'albero...",
-    'ta_IN': 'Flipping tree...'
+    'ta_IN': 'Flipping tree...',
+    'hu'   : 'Fa megfordítása...'
   },
   ///////////////////////////////////////////////////////////////////////////
   'refresh-tree-command': {
@@ -1191,7 +1245,8 @@ exports.strings = {
     'sl_SI': 'Osveževanje drevesa ...',
     'pl'   : 'Odświeżanie drzewa...',
     'it_IT': "Aggiornando l'albero...",
-    'ta_IN': 'Refreshing tree...'
+    'ta_IN': 'Refreshing tree...',
+    'hu'   : 'Fa frissítése...'
   },
   ///////////////////////////////////////////////////////////////////////////
   'locale-command': {
@@ -1213,7 +1268,8 @@ exports.strings = {
     'sl_SI': 'Locale nastavljen na {locale}',
     'pl'   : 'Ustawiono język na {locale}',
     'it_IT': "Locale impostato a {locale}",
-    'ta_IN': 'பிரதேசம் {locale}ஆக மற்ற பட்டுள்ளது'
+    'ta_IN': 'பிரதேசம் {locale}ஆக மற்ற பட்டுள்ளது',
+    'hu'   : 'A nyelv- és országkód frissítve erre: {locale}'
   },
   ///////////////////////////////////////////////////////////////////////////
   'locale-reset-command': {
@@ -1235,7 +1291,8 @@ exports.strings = {
     'sl_SI': 'Locale ponastavljen na {locale}',
     'pl'   : 'Przywrócono język do wartości domyślnych, czyli {locale}',
     'it_IT': "Locale resettato al valore di default, che è {locale}",
-    'ta_IN': 'பிரதேசம் இயல்புநிலை {locale}க்கி மீட்டமைக்கப்பட்டுள்ளது'
+    'ta_IN': 'பிரதேசம் இயல்புநிலை {locale}க்கி மீட்டமைக்கப்பட்டுள்ளது',
+    'hu'   : 'A nyelv- és országkód alapértelmezettre ({locale}) visszaállítva'
   },
   ///////////////////////////////////////////////////////////////////////////
   'show-command': {
@@ -1257,7 +1314,8 @@ exports.strings = {
     'sl_SI': 'Prosim uporabi enega od naslednjih ukazov',
     'pl'   : 'Aby uzyskać więcej informacji, użyj jednego z następujących poleceń:',
     'it_IT': "Usa uno dei seguenti comandi per maggiori informazioni:",
-    'ta_IN': 'மேலும் தகவலுக்கு பின்வரும் கட்டளைகளில் ஒன்றைப் பயன்படுத்தவும்:'
+    'ta_IN': 'மேலும் தகவலுக்கு பின்வரும் கட்டளைகளில் ஒன்றைப் பயன்படுத்தவும்:',
+    'hu'   : 'Kérjük használd az alábbi parancsok egyikét több információért:'
   },
   ///////////////////////////////////////////////////////////////////////////
   'show-all-commands': {
@@ -1279,7 +1337,8 @@ exports.strings = {
     'sl_SI': 'Tu je seznam vseh možnih ukazov:',
     'pl'   : 'Oto lista wszystkich dostępnych poleceń:',
     'it_IT': "Ecco la lista con tutti i comandi disponibili:",
-    'ta_IN': 'கிடைக்கக்கூடிய அனைத்து கட்டளைகளின் பட்டியல்:'
+    'ta_IN': 'கிடைக்கக்கூடிய அனைத்து கட்டளைகளின் பட்டியல்:',
+    'hu'   : 'Ez az összes elérhető parancs listája:'
   },
   ///////////////////////////////////////////////////////////////////////////
   'cd-command': {
@@ -1301,7 +1360,8 @@ exports.strings = {
     'sl_SI': 'Mapa spremenjena na "/directories/dont/matter/in/this/demo"',
     'pl'   : 'Katalog zmieniony na "/home/users/windows/pl/demo"',
     'it_IT': 'Cartella modificata in  "/directories/dont/matter/in/this/demo"',
-    'ta_IN': 'அடைவு "/directories/dont/matter/in/this/demo"க்கு மாற்றப்பட்டது'
+    'ta_IN': 'அடைவு "/directories/dont/matter/in/this/demo"க்கு மாற்றப்பட்டது',
+    'hu'   : 'Nincs fájlrendszer ezen app mögött. Az aktuális mappa: "/a/mappák/nem/számítanak/itt"'
   },
   ///////////////////////////////////////////////////////////////////////////
   'ls-command': {
@@ -1323,7 +1383,8 @@ exports.strings = {
     'sl_SI': 'DontWorryAboutFilesInThisDemo.txt',
     'pl'   : 'SpokojnieToTylkoPlikDemo.txt',
     'it_IT': "NoNdEvIpReOcCuPaRtIdEiFiLeInQuEsTaDeMo.txt",
-    'ta_IN': 'DontWorryAboutFilesInThisDemo.txt'
+    'ta_IN': 'DontWorryAboutFilesInThisDemo.txt',
+    'hu'   : 'NincsFájlrendszerEzenAppMögött.txt'
   },
   'mobile-alert': {
     '__desc__': 'When someone comes to the site on a mobile device, they can not input commands so this is a nasty alert to tell them',
@@ -1345,7 +1406,8 @@ exports.strings = {
     'pl'   : 'Przepraszamy, ale LearnGitBranching nie obsługuje wpisywania komend z urządzeń mobilnych. Odwiedź LearnGitBranching na komputerze stacjonarnym, warto! :D',
     'it_IT':
       "LGB non funziona su mobile, vieni a trovarci da pc! Ne vale veramente la pena :D",
-    'ta_IN': 'LGBஆல் மொபைலில் உள்ளீட்டைப் பெற முடியாது, டெஸ்க்டாப்பில் பார்வையிடவும், அது பயணுள்ளது :D'
+    'ta_IN': 'LGBஆல் மொபைலில் உள்ளீட்டைப் பெற முடியாது, டெஸ்க்டாப்பில் பார்வையிடவும், அது பயணுள்ளது :D',
+    'hu'   : 'Sajnáljuk, de ez az oldal nincs mobil-ra optimalizálva. Használj egy asztali böngészőt!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'share-tree': {
@@ -1368,7 +1430,8 @@ exports.strings = {
     'pl'   : 'Udostępnij to drzewo znajomym! Mogą je załadować za pomocą "import tree"',
     'it_IT':
       'Condividi quest\'albero con i tuoi amici! Può essere importato tramite "import tree"',
-    'ta_IN': 'இந்த `tree`ஐ நண்பர்களுடன் பகிர்ந்து கொள்ளுங்கள்! அவர்கள் அதை "import tree" மூலம் பெறலாம்'
+    'ta_IN': 'இந்த `tree`ஐ நண்பர்களுடன் பகிர்ந்து கொள்ளுங்கள்! அவர்கள் அதை "import tree" மூலம் பெறலாம்',
+    'hu'   : 'Oszd meg a fát a barátaiddal! Ők az import tree paranccsal tudják ezt beolvasni!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'paste-json': {
@@ -1390,7 +1453,8 @@ exports.strings = {
     'sl_SI': 'Prilepi JSON kodo spodaj!',
     'pl'   : 'Wklej poniżej obiekt z kodem JSON!',
     'it_IT': "Incolla un blob JSON qui sotto!",
-    'ta_IN': 'ஒரு JSON blob-ஐ கீழே ஒட்டவும்'
+    'ta_IN': 'ஒரு JSON blob-ஐ கீழே ஒட்டவும்',
+    'hu'   : 'Illeszd be a JSON blob-ot'
   },
   ///////////////////////////////////////////////////////////////////////////
   'solved-map-reset': {
@@ -1412,7 +1476,8 @@ exports.strings = {
     'sl_SI': 'Rešena mapa je ponastavljena, začel boš lahko na novo!',
     'pl'   : 'Rozwiązania zostały wyczyszczone, zaczynasz z czystą kartą.',
     'it_IT': "I progresse salvati sono stati resettati, stai iniziando da zero!",
-    'ta_IN': 'தீர்க்கப்பட்ட கோப்பு மீட்டமைக்கப்பட்டது, நீங்கள் ஆரம்பத்தில் இருந்து தொடங்குகிறீர்கள்!'
+    'ta_IN': 'தீர்க்கப்பட்ட கோப்பு மீட்டமைக்கப்பட்டது, நீங்கள் ஆரம்பத்தில் இருந்து தொடங்குகிறீர்கள்!',
+    'hu'   : 'Az eddigi haladás törölve lett, tiszta lappal indulsz!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'level-cant-exit': {
@@ -1435,7 +1500,8 @@ exports.strings = {
     'pl'   : 'Nie jesteś na poziomie! Jesteś w trybie piaskownicy, zacznij poziom wpisując "levels"',
     'it_IT':
       'Non ti trovi in un livello! Sei nella sandbox, inizia un livello con "levels"',
-    'ta_IN': 'ஒரு நிலையில் இல்லாமல், நீங்கள் sandbox-இல் உள்ளீர்கள்! "நிலைகள்" மூலம் ஒரு நிலையைத் தொடங்கவும்'
+    'ta_IN': 'ஒரு நிலையில் இல்லாமல், நீங்கள் sandbox-இல் உள்ளீர்கள்! "நிலைகள்" மூலம் ஒரு நிலையைத் தொடங்கவும்',
+    'hu'   : 'Jelenleg sandbox üzemmódban vagy, nem egy szint-ben. Indíts el egy szintet a "levels" paranccsal!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'level-no-id': {
@@ -1458,7 +1524,8 @@ exports.strings = {
     'pl'   : 'Nie znaleziono poziomu {id}!. Otwieranie widoku wyboru poziomu...',
     'it_IT':
       'Non è stato trovato un livello con id "{id}"! Apro la finestra con la selezione dei livelli',
-    'ta_IN': 'அந்த "{id}"-க்கான நிலை  காணப்படவில்லை! நிலை தேர்வு செய்யும் திரை திறக்கிறது'
+    'ta_IN': 'அந்த "{id}"-க்கான நிலை  காணப்படவில்லை! நிலை தேர்வு செய்யும் திரை திறக்கிறது',
+    'hu'   : 'Nem található szint "{id}" azonosítóval! A szintválasztó megnyitása folyamatban...'
   },
   ///////////////////////////////////////////////////////////////////////////
   'undo-stack-empty': {
@@ -1480,7 +1547,8 @@ exports.strings = {
     'sl_SI': 'Undo seznam je prazen!',
     'pl'   : 'Nie ma już poleceń do cofnięcia!',
     'it_IT': "Non sono presenti comandi da annullare!",
-    'ta_IN': 'மீள்பதிவு அடுக்கு காலியாக உள்ளது!'
+    'ta_IN': 'மீள்பதிவு அடுக்கு காலியாக உள்ளது!',
+    'hu'   : 'Nincs mit visszacsinálni'
   },
   ///////////////////////////////////////////////////////////////////////////
   'already-solved': {
@@ -1503,7 +1571,8 @@ exports.strings = {
     'pl'   : 'Już rozwiązałeś ten poziom, wypróbuj inne, używając "levels" lub wróć do trybu piaskownicy za pomocą polecenia "sandbox"',
     'it_IT':
       'Hai già risolto questo livello, prova altri livelli con "levels" o torna alla sandbox con "sandbox"',
-    'ta_IN': 'நீங்கள் ஏற்கனவே இந்த நிலையை தீர்த்துள்ளீர்கள், "நிலைகள்" மூலம் பிற நிலைகளை முயற்சிக்கவும் அல்லது "sandbox" உடன் sandbox-க்குச் செல்லவும்'
+    'ta_IN': 'நீங்கள் ஏற்கனவே இந்த நிலையை தீர்த்துள்ளீர்கள், "நிலைகள்" மூலம் பிற நிலைகளை முயற்சிக்கவும் அல்லது "sandbox" உடன் sandbox-க்குச் செல்லவும்',
+    'hu'   : 'Ezt a szintet egyszer már megoldottad. Próbálj ki más szinteket a "levels" paranccsal, vagy indítsd el a sandbox üzemmódot a "sandbox" paranccsal!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'solved-level': {
@@ -1522,7 +1591,8 @@ exports.strings = {
     'sl_SI': 'Rešeno!!!\n:D',
     'pl'   : 'Rozwiązany!!!\n:D',
     'it_IT': "Risolto!!!\n:D",
-    'ta_IN': 'தீர்க்கப்பட்டது!!!\n:D'
+    'ta_IN': 'தீர்க்கப்பட்டது!!!\n:D',
+    'hu'   : 'Siker!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'command-disabled': {
@@ -1544,7 +1614,8 @@ exports.strings = {
     'sl_SI': 'Ta git ukaz je onemogočen za to stopnjo!',
     'pl'   : 'To polecenie Gita jest wyłączone na tym poziomie!',
     'it_IT': "Questo comando git è disabilitato per questo livello!",
-    'ta_IN': 'இந்த நிலையில் அந்த கிட் கட்டளை முடக்கப்பட்டுள்ளது'
+    'ta_IN': 'இந்த நிலையில் அந்த கிட் கட்டளை முடக்கப்பட்டுள்ளது',
+    'hu'   : 'Ez a parancs, ezen a szinten nem elérhető. Próbáld meg nélküle megoldani!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'share-json': {
@@ -1567,7 +1638,8 @@ exports.strings = {
     'pl'   : 'To jest JSON dla tego poziomu. Udostępnij go, komu chcesz, lub wyślij do mnie na GitHub.',
     'it_IT':
       "Ecco il JSON per questo livello! Condividilo con qualcuno o inviamelo tramite GitHub",
-    'ta_IN': 'இதோ இந்த நிலைக்கான JSON, இதை பகிர்ந்து கொள்ளுங்கள் அல்லது GitHub-இல் எனக்கு அனுப்புங்கள்'
+    'ta_IN': 'இதோ இந்த நிலைக்கான JSON, இதை பகிர்ந்து கொள்ளுங்கள் அல்லது GitHub-இல் எனக்கு அனுப்புங்கள்',
+    'hu'   : 'Itt van a szint JSON-je. Oszd meg másokkal, vagy küld el neke GitHub-on!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'want-start-dialog': {
@@ -1590,7 +1662,8 @@ exports.strings = {
     'pl'   : 'Nie określiłeś okna startowego, czy chcesz je dodać?',
     'it_IT':
       "Non hai specificato una finestra di partenza, ne vuoi aggiungere una?",
-    'ta_IN': 'தொடக்க உரை எதுவும் நீங்கள் குறிப்பிடவில்லை, ஏதேனும் ஒன்றைச் சேர்க்க விரும்புகிறீர்களா?'
+    'ta_IN': 'தொடக்க உரை எதுவும் நீங்கள் குறிப்பிடவில்லை, ஏதேனும் ஒன்றைச் சேர்க்க விரும்புகிறீர்களா?',
+    'hu'   : 'Nem attál meg kedzdő dialógust. Szeretnél hozzáadni egyet?'
   },
   ///////////////////////////////////////////////////////////////////////////
   'want-hint': {
@@ -1612,7 +1685,8 @@ exports.strings = {
     'sl_SI': 'Nisi določil namiga, bi ga rad dodal?',
     'pl'   : 'Nie podałeś podpowiedzi, czy chcesz ją dodać?',
     'it_IT': "Non hai specificato un suggerimento, ne vuoi aggiungere uno?",
-    'ta_IN': 'நீங்கள் குறிப்பெதுவும் தரவில்லை, ஏதேனும் ஒன்றைச் சேர்க்க விரும்புகிறீர்களா?'
+    'ta_IN': 'நீங்கள் குறிப்பெதுவும் தரவில்லை, ஏதேனும் ஒன்றைச் சேர்க்க விரும்புகிறீர்களா?',
+    'hu'   : 'Nem adtál meg segítséget. Szeretnél hozzáadni egyet?'
   },
   ///////////////////////////////////////////////////////////////////////////
   'prompt-hint': {
@@ -1635,7 +1709,8 @@ exports.strings = {
     'pl'   : 'Wpisz wskazówkę dotyczącą tego poziomu lub pozostaw ją pustą, jeśli nie chcesz jej uwzględniać.',
     'it_IT':
       "Inserisci un suggerimento per questo livello, oppure lascialo vuoto se non ne vuoi aggiungere",
-    'ta_IN': 'இந்த நிலைக்கான குறிப்பை உள்ளிடவும், குறிப்பு தேவை இல்லை என்றால் இதனை காலியாக விடுவும்'
+    'ta_IN': 'இந்த நிலைக்கான குறிப்பை உள்ளிடவும், குறிப்பு தேவை இல்லை என்றால் இதனை காலியாக விடுவும்',
+    'hu'   : 'Add meg a szinthez tartozó segítség szövegét. Vagy hagyd üresen, ha nem akarsz megadni.'
   },
   ///////////////////////////////////////////////////////////////////////////
   'prompt-name': {
@@ -1657,7 +1732,8 @@ exports.strings = {
     'sl_SI': 'Vnesi ime za stopnjo',
     'pl'   : 'Wprowadź nazwę poziomu',
     'it_IT': "Inserisci il nome per questo livello",
-    'ta_IN': 'நிலைக்கான பெயரை உள்ளிடவும்'
+    'ta_IN': 'நிலைக்கான பெயரை உள்ளிடவும்',
+    'hu'   : 'Add meg a szint nevét'
   },
   ///////////////////////////////////////////////////////////////////////////
   'solution-empty': {
@@ -1679,7 +1755,8 @@ exports.strings = {
     'sl_SI': 'Tvoja rešitev je prazna!! Nekaj ni vredu.',
     'pl'   : 'Twoje rozwiązanie jest puste!! Coś musi zostać zrobione.',
     'it_IT': "C'è qualcosa che non va. La soluzione è vuota!! ",
-    'ta_IN': 'உங்கள் தீர்வு காலியாக உள்ளது!! ஏதோ தவறாக இருக்கிறது'
+    'ta_IN': 'உங்கள் தீர்வு காலியாக உள்ளது!! ஏதோ தவறாக இருக்கிறது',
+    'hu'   : 'Nincs megadva megoldás!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'define-start-warning': {
@@ -1702,7 +1779,8 @@ exports.strings = {
     'pl'   : 'Ustawianie punktu startowego... Rozwiązanie i cel zostaną nadpisane, jeśli zostały wcześniej zdefiniowane',
     'it_IT':
       "Definendo punto di partenza... soluzione e obiettivo saranno sovrascritti se erano già stati definiti.",
-    'ta_IN': 'தொடக்கத்தை வரையறுத்தல்... தீர்வு மற்றும் குறிக்கோள் முன்னரே வரையறுக்கப்பட்டிருந்தால் மேலெழுதப்படும்'
+    'ta_IN': 'தொடக்கத்தை வரையறுத்தல்... தீர்வு மற்றும் குறிக்கோள் முன்னரே வரையறுக்கப்பட்டிருந்தால் மேலெழுதப்படும்',
+    'hu'   : 'Kiindulási pont definiálása... Ha volt korábban emgadva megoldás vagy cél, azok felül lettek írva'
   },
   ///////////////////////////////////////////////////////////////////////////
   'help-vague-level': {
@@ -1725,7 +1803,8 @@ exports.strings = {
     'pl'   : 'Jesteś na poziomie, więc istnieje kilka rodzajów pomocy. Wpisz "help level", aby dowiedzieć się więcej o tej lekcji, wpisz "help general", aby uzyskać pomoc dotyczącą korzystania z nauki GitBranching, lub wpisz "objective", aby dowiedzieć się, jak rozwiązać ten poziom.',
     'it_IT':
       'Sei dentro a un livello, hai a disposizione vari tipi di aiuto. Digita "help level" per saperne di più su questa lezione, "help general" per come usare Learn GitBranching, o "objective" per capire come risolvere il livello.',
-    'ta_IN': 'நீங்கள் ஒரு நிலையில் உள்ளீர்கள், எனவே பல வகையான உதவி பெற இயலும். இந்த பாடத்தைப் பற்றி மேலும் அறிய "நிலைக்கான உதவி" என்பதைத் தேர்ந்தெடுக்கவும், Learn GitBranching பற்றி மேலும் அறிய "பொது உதவி" பயன்படுத்துக, அல்லது இந்த நிலையை எவ்வாறு தீர்ப்பது என்பது பற்றி அறிய "நோக்கம்" தேர்ந்தெடுக்கவும்.'
+    'ta_IN': 'நீங்கள் ஒரு நிலையில் உள்ளீர்கள், எனவே பல வகையான உதவி பெற இயலும். இந்த பாடத்தைப் பற்றி மேலும் அறிய "நிலைக்கான உதவி" என்பதைத் தேர்ந்தெடுக்கவும், Learn GitBranching பற்றி மேலும் அறிய "பொது உதவி" பயன்படுத்துக, அல்லது இந்த நிலையை எவ்வாறு தீர்ப்பது என்பது பற்றி அறிய "நோக்கம்" தேர்ந்தெடுக்கவும்.',
+    'hu'   : 'Egy szinten belül több féle segítség is elérhető. Használd a "help level" parancsot, hogy többet megtudj erről a szintről. Használd a "help general" parancsot, hogy megismerd az app használatát, vagy az "objective" parancsot, hogy megtudd, hogyan kell ezt a szintet megoldani.'
   },
   ///////////////////////////////////////////////////////////////////////////
   'help-vague-builder': {
@@ -1748,7 +1827,8 @@ exports.strings = {
     'pl'   : 'Znajdujesz się w kreatorze poziomów. Dostępnych jest tu kilka rodzajów pomocy. Wpisz "help general", aby uzyskać pomoc dotyczącą nauki GitBranching-u, lub wpisz "help builder", aby uzyskać pomoc dotyczącą konstruktora poziomów',
     'it_IT':
       'Sei in un generatore di livelli, hai a disposizione vari tipi di aiuto. Digita "help general" o "help builder"',
-    'ta_IN': 'நீங்கள் ஒரு நிலை கட்டமைப்பானில் உள்ளீர்கள், எனவே பல வகையான உதவி பெற இயலும். தயவுசெய்து "பொது உதவி" அல்லது "கட்டமைப்பான் உதவி" என்பதைத் தேர்ந்தெடுக்கவும்'
+    'ta_IN': 'நீங்கள் ஒரு நிலை கட்டமைப்பானில் உள்ளீர்கள், எனவே பல வகையான உதவி பெற இயலும். தயவுசெய்து "பொது உதவி" அல்லது "கட்டமைப்பான் உதவி" என்பதைத் தேர்ந்தெடுக்கவும்',
+    'hu'   : 'Kérjük add meg miben kell segítség: "help general" vagy "help builder"'
   },
   ///////////////////////////////////////////////////////////////////////////
   'show-goal-button': {
@@ -1771,7 +1851,8 @@ exports.strings = {
     'sl_SI': 'Prikaži Cilj',
     'pl' : 'Pokaż cel',
     'it_IT': "Mostra obiettivo",
-    'ta_IN': 'இலக்கைக் காட்டு'
+    'ta_IN': 'இலக்கைக் காட்டு',
+    'hu'   : 'Cél mutatása'
   },
   ///////////////////////////////////////////////////////////////////////////
   'hide-goal-button': {
@@ -1794,7 +1875,8 @@ exports.strings = {
     'sl_SI': 'Skrij Cilj',
     'pl' : 'Ukryj cel',
     'it_IT': "Nascondi obiettivo",
-    'ta_IN': 'இலக்கை மறை'
+    'ta_IN': 'இலக்கை மறை',
+    'hu'   : 'Cél elrejtése'
   },
   ///////////////////////////////////////////////////////////////////////////
   'objective-button': {
@@ -1813,7 +1895,8 @@ exports.strings = {
     'sl_SI': 'Navodila',
     'pl' : 'Instrukcje',
     'it_IT': "Istruzioni",
-    'ta_IN': 'வழிமுறைகள்'
+    'ta_IN': 'வழிமுறைகள்',
+    'hu'   : 'Feladat'
   },
   ///////////////////////////////////////////////////////////////////////////
   'git-demonstration-title': {
@@ -1832,7 +1915,8 @@ exports.strings = {
     'sl_SI': 'Git Predstavitev',
     'pl'   : 'Demo GIT',
     'it_IT': "Dimostrazione Git",
-    'ta_IN': 'கிட் செயல் விளக்கம்'
+    'ta_IN': 'கிட் செயல் விளக்கம்',
+    'hu'   : 'Git demonstráció'
   },
   ///////////////////////////////////////////////////////////////////////////
   'goal-to-reach': {
@@ -1855,7 +1939,8 @@ exports.strings = {
     'sl_SI': 'Končni Cilj',
     'pl': 'Cel do osiągnięcia',
     'it_IT': "Obiettivo da raggiungere",
-    'ta_IN': 'அடைய வேண்டிய இலக்கு'
+    'ta_IN': 'அடைய வேண்டிய இலக்கு',
+    'hu'   : 'Cél'
   },
   ///////////////////////////////////////////////////////////////////////////
   'goal-only-main': {
@@ -1879,7 +1964,8 @@ exports.strings = {
     'pl': '<span class="fwber"> Uwaga:</span> Na tym poziomie będzie sprawdzana tylko poprawność gałęzi main. Pozostałe gałęzie są tylko odniesieniem (pokazane jako przerywane etykiety poniżej). Jak zawsze, możesz ukryć to okno klikając "Ukryj cel".',
     'it_IT':
       '<span class="fwber">Nota:</span> In questo livello sarà selezionato solo il ramo main. Gli altri rami ci sono solo come riferimento (mostrati come etichette tratteggiate). Come sempre, puoi nascondere questa finestra con "hide goal"',
-    'ta_IN': '<span class="fwber">குறிப்பு:</span> இந்த மட்டத்தில் பிரதான கிளை மட்டுமே சரிபார்க்கப்படும். மற்ற கிளைகள் வெறுமனே விளக்க குறிப்புக்காக மட்டுமே (கீழே விடுபட்ட மேற்கோள்களாக காட்டப்பட்டுள்ளது). எப்பொழுதும் போல், "இலக்கை மறை" மூலம் இந்த சாளரத்தை மறைக்கலாம்'
+    'ta_IN': '<span class="fwber">குறிப்பு:</span> இந்த மட்டத்தில் பிரதான கிளை மட்டுமே சரிபார்க்கப்படும். மற்ற கிளைகள் வெறுமனே விளக்க குறிப்புக்காக மட்டுமே (கீழே விடுபட்ட மேற்கோள்களாக காட்டப்பட்டுள்ளது). எப்பொழுதும் போல், "இலக்கை மறை" மூலம் இந்த சாளரத்தை மறைக்கலாம்',
+    'hu'   : '<span class="fwber">Figyelem:</span> Csak a main branch lesz ellenőrizve ezen a szinten. A többi branch csak példaként van itt (szaggatott címkék). Ezt az ablakot a "hide goal" segítségével rejtheted el'
   },
   ///////////////////////////////////////////////////////////////////////////
   'hide-goal': {
@@ -1902,7 +1988,8 @@ exports.strings = {
     'sl_SI': 'To okno lahko skriješ z "hide goal"',
     'pl': 'Możesz ukryć to okno za pomocą opcji "ukryj cel"',
     'it_IT': 'Puoi nascondere questa finestra con "hide goal"',
-    'ta_IN': 'இந்த சாளரத்தை "இலக்கை மறை" மூலம் மறைக்கலாம்'
+    'ta_IN': 'இந்த சாளரத்தை "இலக்கை மறை" மூலம் மறைக்கலாம்',
+    'hu'   : 'Rejtsd el ezt az ablakot a "hide goal" segítségével'
   },
   ///////////////////////////////////////////////////////////////////////////
   'hide-start': {
@@ -1925,7 +2012,8 @@ exports.strings = {
     'sl_SI': 'To okno lahko skriješ z "hide start"',
     'pl': 'Możesz ukryć to okno za pomocą opcji "ukryj start"',
     'it_IT': 'Puoi nascondere questa finestra con "hide start"',
-    'ta_IN': 'இந்த சாளரத்தை "தொடக்கத்தை மறை" மூலம் மறைக்கலாம்'
+    'ta_IN': 'இந்த சாளரத்தை "தொடக்கத்தை மறை" மூலம் மறைக்கலாம்',
+    'hu'   : 'Rejtsd el ezt az ablakot a "hide start" segítségével'
   },
   ///////////////////////////////////////////////////////////////////////////
   'level-builder': {
@@ -1948,7 +2036,8 @@ exports.strings = {
     'sl_SI': 'Graditelj Stopenj',
     'pl': 'Twórca poziomu',
     'it_IT': "Generatore di livelli",
-    'ta_IN': 'நிலை கட்டமைப்பான்'
+    'ta_IN': 'நிலை கட்டமைப்பான்',
+    'hu'   : 'Szint szerkesztő'
   },
   ///////////////////////////////////////////////////////////////////////////
   'no-start-dialog': {
@@ -1971,7 +2060,8 @@ exports.strings = {
     'sl_SI': 'Ni začetnega dialoga za prikaz te stopnje!',
     'pl': 'Dla tego poziomu nie ma okna startowego do wyświetlenia!',
     'it_it': "Non esiste una finestra di partenza per questo livello!",
-    'ta_IN': 'இந்த நிலை பற்றி விளக்கிகாட்ட தொடக்க உரையாடல் எதுவும் இல்லை'
+    'ta_IN': 'இந்த நிலை பற்றி விளக்கிகாட்ட தொடக்க உரையாடல் எதுவும் இல்லை',
+    'hu'   : 'Ennek a szintnek nincsen kezdő ablaka!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'no-hint': {
@@ -1994,7 +2084,8 @@ exports.strings = {
     'sl_SI': 'Hmm, izgleda da ni namiga za to stopnjo :-/',
     'pl': 'Hmm, wydaje się, że nie ma podpowiedzi dla tego poziomu :-/',
     'it_IT': "Mmh, sembra non ci sia un suggerimento per questo livello :-/",
-    'ta_IN': 'ஹ்ம், இந்த நிலைக்கு ஒரு குறிப்பு எதுவும் இருப்பதாகத் தெரியவில்லை :-/'
+    'ta_IN': 'ஹ்ம், இந்த நிலைக்கு ஒரு குறிப்பு எதுவும் இருப்பதாகத் தெரியவில்லை :-/',
+    'hu'   : 'Nincs segítség megadva ehhez a szinthez :-/'
   },
   ///////////////////////////////////////////////////////////////////////////
   'error-untranslated-key': {
@@ -2018,7 +2109,8 @@ exports.strings = {
     'pl': 'Tłumaczenie dla klucza "{key}" jeszcze nie istnieje tłumaczenia :( Zapraszam na GitHub, aby pomóc w tłumaczeniu!',
     'it_IT':
       "La traduzione per {key} non esiste ancora :( Fai un salto su GitHub e dacci una mano!",
-    'ta_IN': '{key}-இன் மொழிபெயர்ப்பு கிடைக்கவில்லை :( github-இன் வழியாக் நீங்களும் மொழி பெயர்க்க உதவலாம்!'
+    'ta_IN': '{key}-இன் மொழிபெயர்ப்பு கிடைக்கவில்லை :( github-இன் வழியாக் நீங்களும் மொழி பெயர்க்க உதவலாம்!',
+    'hu'   : 'A {key} kulcs fordítása hiányzik. :( Segíts minket a GitHub-on a fordítással! :)'
   },
   ///////////////////////////////////////////////////////////////////////////
   'error-untranslated': {
@@ -2042,7 +2134,8 @@ exports.strings = {
     'pl' : 'Kolejne okno dialogowe lub tekst nie zostało jeszcze przetłumaczone na język polski :( Zapraszam na GitHub, aby pomóc w tłumaczeniu!',
     'it_IT':
       "Questo messaggio o testo non è ancora stato tradotto nella tua lingua :(  Fai un salto su GitHub e dacci una mano!",
-    'ta_IN': 'இந்த உரையாடல் அல்லது உரை உங்கள் தமிழில் இன்னும் மொழிபெயர்க்கப்படவில்லை :( github-இன் வழியாக் நீங்களும் மொழி பெயர்க்க உதவலாம்!'
+    'ta_IN': 'இந்த உரையாடல் அல்லது உரை உங்கள் தமிழில் இன்னும் மொழிபெயர்க்கப்படவில்லை :( github-இன் வழியாக் நீங்களும் மொழி பெயர்க்க உதவலாம்!',
+    'hu'   : 'Ez a szöveg még nincs lefordítva. :( Segíts minket a GitHub-on a fordítással!'
   },
   ///////////////////////////////////////////////////////////////////////////
   'cancel-button': {
@@ -2055,7 +2148,8 @@ exports.strings = {
     'pl' : 'Powrót',
     'it_IT': "Annulla",
     'ta_IN': 'இரத்துசெய்',
-    'vi': 'Hủy'
+    'vi': 'Hủy',
+    'hu' : 'Mégse'
   },
   ///////////////////////////////////////////////////////////////////////////
   'confirm-button': {
@@ -2068,7 +2162,8 @@ exports.strings = {
     'pl' : 'Dalej',
     'it_IT': "Conferma",
     'ta_IN': 'உறுதிப்படுத்தவும்',
-    'vi': 'Đồng ý'
+    'vi': 'Đồng ý',
+    'hu' : 'Megerősítés'
   },
   ///////////////////////////////////////////////////////////////////////////
   'level-label': {
@@ -2079,7 +2174,8 @@ exports.strings = {
     'de_DE': ' Level ',
     'zh_TW': '關卡 ',
     'it_IT': " Livello ",
-    'pl' : ' Poziom '
+    'pl' : ' Poziom ',
+    'hu' : ' Szint '
   },
   ///////////////////////////////////////////////////////////////////////////
   'command-helper-bar-levels': {
@@ -2090,7 +2186,8 @@ exports.strings = {
     'de_DE': 'Levels',
     'zh_TW': '關卡',
     'it_IT': "Livelli",
-    'pl' : 'Poziomy'
+    'pl' : 'Poziomy',
+    'hu': 'Szintek',
   },
   ///////////////////////////////////////////////////////////////////////////
   'command-helper-bar-solution': {
@@ -2101,7 +2198,8 @@ exports.strings = {
     'de_DE': 'Lösung',
     'zh_TW': '解答',
     'it_IT': "Soluzione",
-    'pl' : 'Rozwiązanie'
+    'pl' : 'Rozwiązanie',
+    'hu'   : 'Megoldás'
   },
   ///////////////////////////////////////////////////////////////////////////
   'command-helper-bar-reset': {
@@ -2112,7 +2210,8 @@ exports.strings = {
     'de_DE': 'Zurücksetzen',
     'zh_TW': '重新開始',
     'it_IT': "Reset",
-    'pl' : 'Wyczyść'
+    'pl' : 'Wyczyść',
+    'hu'   : 'Újrakezdés'
   },
   ///////////////////////////////////////////////////////////////////////////
   'command-helper-bar-undo': {
@@ -2123,7 +2222,8 @@ exports.strings = {
     'de_DE': 'Rückgängig',
     'zh_TW': '回到上一步',
     'it_IT': "Annulla",
-    'pl' : 'Cofnij'
+    'pl' : 'Cofnij',
+    'hu'   : 'Visszavonás'
   },
   ///////////////////////////////////////////////////////////////////////////
   'command-helper-bar-objective': {
@@ -2134,7 +2234,8 @@ exports.strings = {
     'de_DE': 'Zielvorgabe',
     'zh_TW': '目標',
     'it_IT': "Obiettivo",
-    'pl' : 'Cel'
+    'pl' : 'Cel',
+    'hu'   : 'Cél'
   },
   ///////////////////////////////////////////////////////////////////////////
   'command-helper-bar-help': {
@@ -2145,7 +2246,8 @@ exports.strings = {
     'de_DE': 'Hilfe',
     'zh_TW': '幫助',
     'it_IT': "Aiuto",
-    'pl' : 'Pomoc'
+    'pl' : 'Pomoc',
+    'hu'   : 'Súgó'
   },
   ///////////////////////////////////////////////////////////////////////////
   'error-command-currently-not-supported': {
@@ -2158,7 +2260,8 @@ exports.strings = {
     'it_IT':
       "Il comando è valido, ma non supportato in questo ambiente! Prova a entrare in un livello o nel generatore di livelli per usare quel comando",
     'pl' : 'To polecenie jest poprawne, ale nie jest obsługiwane w obecnym środowisku! Spróbuj wybrać poziom lub włączyć konstruktor poziomów, aby użyć tej komendy',
-    'vi': 'Lệnh đó hợp lệ, nhưng không được hỗ trợ ở môi trường hiện tại! Hãy thử vào một cấp độ hoặc trình tạo cấp độ để sử dụng lệnh'
+    'vi': 'Lệnh đó hợp lệ, nhưng không được hỗ trợ ở môi trường hiện tại! Hãy thử vào một cấp độ hoặc trình tạo cấp độ để sử dụng lệnh',
+    'hu'   : 'Ezt a parancsot ismeri az app, de itt most nem lehet használni. Kezdj el egy szintet, vagy indítsd el a szint szerkesztőt, hogy használhasd!',
   },
   ///////////////////////////////////////////////////////////////////////////
   'interactive-rebase-title': {
@@ -2170,6 +2273,7 @@ exports.strings = {
     'zh_TW': '互動式 Rebase',
     'it_IT': "Rebase interattivo",
     'pl' : 'Interaktywny Rebase',
-    'vi': 'Rebase tương tác'
+    'vi': 'Rebase tương tác',
+    'hu': 'Interaktív Rebase'
   },
 };

@@ -212,5 +212,16 @@ exports.dialog = {
       },
     },
   ],
+  'hu': [{
+    type: 'ModalAlert',
+    options: {
+      markdowns: [
+        '## Nagyszerű munka!!!',
+        '',
+        'A szintet *{numCommands}* parancs segítségével oldottad meg; ',
+        'a mi megoldásunk {best} parancsot használ.'
+      ]
+    }
+  }],
 };
  
