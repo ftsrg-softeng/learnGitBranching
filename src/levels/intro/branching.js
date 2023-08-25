@@ -20,7 +20,8 @@ exports.level = {
     "sl_SI": "Branchanje v Gitu",
     "pl": "Rozgałęzienia w Gicie",
     "it_IT": "Creare rami in Git",
-    "ta_IN": "கிட் கிளை நிருவாகம்"
+    "ta_IN": "கிட் கிளை நிருவாகம்",
+    "hu": "Branch-ek használata"
   },
   "hint": {
     "en_US": "Make a new branch with \"git branch <branch-name>\" and check it out with \"git checkout <branch-name>\"",
@@ -41,7 +42,8 @@ exports.level = {
     "sl_SI": "Naredi nov branch z \"git branch [ime-brancha]\" in ga checkoutaj z \"git checkout [ime-brancha]\"",
     "pl": "Utwórz nową gałąź za pomocą \"git branch <nazwa-gałęzi>\" i przełącz się na nią za pomocą \"git checkout <nazwa-gałęzi>\"",
     "it_IT": 'Crea un nuovo ramo con "git branch <branch-name>" e selezionalo con "git checkout <branch-name>"',
-    "ta_IN": "இப்போது \"git branch <branch-name>\" கட்டளையை கொண்டு புதிய கிளை ஒன்றை உருவாக்குக பின் \"git checkout <branch-name>\" கொண்டு அந்த கிளைக்கு தாவுக"
+    "ta_IN": "இப்போது \"git branch <branch-name>\" கட்டளையை கொண்டு புதிய கிளை ஒன்றை உருவாக்குக பின் \"git checkout <branch-name>\" கொண்டு அந்த கிளைக்கு தாவுக",
+    'hu': 'Hozz létre egy új branch-et a "git branch <branch-neve>" paranccsal, és válaszd ki a "git checkout <branch-neve>" paranccsal'
   },
   "disabledMap": {
     "git revert": true
@@ -1626,5 +1628,98 @@ exports.level = {
         },
       ],
     },
+    "hu": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Branch-ek",
+              "",
+              "A git branch-ei szintén rendkívül kevés erőforrást igényelnek. Tulajdonképpen egyszerű mutatók egy adott commit-ra. Ezért létezik egy gyakori mondás a git használói körében:",
+              "",
+              "```",
+              "Hozz létre branch-eket hamar, és gyakran",
+              "```",
+              "",
+              "Ennek oka, hogy nincs se tárhely, se memória igénye sok branch létrehozásának, ezért egyszerűbb logikailag feldarabolni a munkádat, mintsem néhány hatalmas branch-et karbantartani.",
+              "",
+              "Ahogy elkezdjük együtt használni a branch-eket és a commit-okat, láthatjuk, hogyan működnek együtt, szimbiózisban. Egyenlőre viszont elég annyit megjegyezni, hogy egy branch annyit mond, hogy \"Szeretném ennek a commit-nak a tartalmát (és minden ős commit tartalmát) használni.\""
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Nézzük meg, hogyan néznek ki a branch-ek a gyakorlatban.",
+              "",
+              "Hozzunk létre egy új branch-et `newImage` néven."
+            ],
+            "afterMarkdowns": [
+              "Ennyi az egész! A `newImage` branch most a `C1`-es commit-ra mutat."
+            ],
+            "command": "git branch newImage",
+            "beforeCommand": ""
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Dolgozzunk ezen az új branch-en. Nyomd meg a gombot!"
+            ],
+            "afterMarkdowns": [
+              "Ajjaj! A `main` branch mozgott, nem a `newImage`! Ennek az az oka, hogy nem a `newImage` branch volt kiválasztva. Ezért volt a csillag (*) a `main` mellett."
+            ],
+            "command": "git commit",
+            "beforeCommand": "git branch newImage"
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Mondjuk meg a git-nek, hogy melyik branch-et akarjuk kiválasztani",
+              "",
+              "```",
+              "git checkout <név>",
+              "```",
+              "",
+              "Ez ki fogja választani az új branch-et, mielőtt még commit-álnánk."
+            ],
+            "afterMarkdowns": [
+              "Így ni! A változtatásaink most már az új branch-re kerültek."
+            ],
+            "command": "git checkout newImage; git commit",
+            "beforeCommand": "git branch newImage"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "*Megjegyzés: A Git 2.23-as verziójában egy új parancs, a `git switch` került bevezetésre, ami előbb-utóbb ki fogja váltani a `git checkout` parancsot, ",
+              "ami picit túl van terhelve (rengeteg különböző dolgot csinál a paramétereinek a függvényében). Ezek a feladatok a ",
+              "`checkout`-ot fogják használni a `switch` helyett, mert a `switch` még kísérleti fázisban van, és a szintaxisa változhat a jövőben. ",
+              "Mindenesetre, te használhatod az új `switch` parancsot is ebben az appban.",
+              "<a href=\"https://git-scm.com/docs/git-switch\" target=\"_blank\">Itt</a> találsz további tészleteket.* "
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Szuper, készen állsz a branch-ek kipróbálására. Amint ez az ablak bezárul, ",
+              "hozz létre egy új, `bugFix` nevű branch-et, és válaszd ki azt.",
+              "",
+              "Tipp: ha létre akarsz hozni egy új branch-et, ÉS ki is akarod választani azonnal, By the way, here's a shortcut: if you want to create a new ",
+              "használd a `git checkout -b [branch neve]` parancsot."
+            ]
+          }
+        }
+      ]
+    }
   }
 };
