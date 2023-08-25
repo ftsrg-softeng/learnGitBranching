@@ -18,7 +18,8 @@ exports.level = {
     'sl_SI': "Uvod v Git Commit",
     'pl': "Wprowadzenie do commitów Gita",
     'it_IT': "Introduzione ai commit in Git",
-    "ta_IN": "கிட் கமிட்கள் ஒரு அறிமுகம்"
+    "ta_IN": "கிட் கமிட்கள் ஒரு அறிமுகம்",
+    'hu': "A git commit-ok bemutatása"
   },
   "goalTreeString": "{\"branches\":{\"main\":{\"target\":\"C3\",\"id\":\"main\"}},\"commits\":{\"C0\":{\"parents\":[],\"id\":\"C0\",\"rootCommit\":true},\"C1\":{\"parents\":[\"C0\"],\"id\":\"C1\"},\"C2\":{\"parents\":[\"C1\"],\"id\":\"C2\"},\"C3\":{\"parents\":[\"C2\"],\"id\":\"C3\"}},\"HEAD\":{\"target\":\"main\",\"id\":\"HEAD\"}}",
   "solutionCommand": "git commit;git commit",
@@ -42,7 +43,8 @@ exports.level = {
     'sl_SI': "Preprosto dvakrat vpiši 'git commit' in zaključi!",
     "pl": "Aby zakończyć, wystarczy dwukrotnie wpisać 'git commit'!",
     'it_IT': "Digita 'git commit' due volte per finire!",
-    "ta_IN": "இந்த நிலையை நிரைவு செய்ய 'git commit' என்று இரண்டு முறை தட்டச்சு செய்க!"
+    "ta_IN": "இந்த நிலையை நிரைவு செய்ய 'git commit' என்று இரண்டு முறை தட்டச்சு செய்க!",
+    'hu': "Gépeld be kétszer a 'git commit' parancsot!"
   },
   "disabledMap": {
     "git revert": true
@@ -855,6 +857,48 @@ exports.level = {
           },
         },
       ],
+    },
+    "hu": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Git commit-ok",
+              "Egy commit egy git repository-ban egy \"pillanatfelvétel\" a mappában lévő (követett) fájlokról. Tulajdonképpen egy hatalmas Ctrl+C Ctrl+V, csak jobb!",
+              "",
+              "A git célja, hogy a commit-ok erőforráshasználata a lehető legkisebb legyen, szóval nem másolja le az egész mappát minden commit-álás esetén. Ehelyett, amikor csak teheti, a commit-ot változások halmazaként tárolja, ami leírja hogyan lehet eljutni a repository egyik verziójából a következőbe.",
+              "",
+              "A git ezek mellett számon tartja, hogy milyen commit-ok történtek és mikor. Ezt nevezzük verziótörténetnek. Ezért fordul elő, hogy a legtöbb commit-nak vannak ősei (ős commit-ok); ezeket mi nyilakkal fogjuk jelölni a vizualizációnkban. A verziótörténet hasznos tud lenni mindenki számára aki a projekten dolgozik.",
+              "",
+              "Tudjuk, hogy elsőre félelmetesnek hangzik, de egyenlőre gondolj egy commit-ra, mit a projekt \"pillanatfelvétele\". A commit-ok kevés erőforrást igényelnek, ezért rendkívül gyorsan lehet közöttük váltani.",
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Nézzük meg, hogy mindez hogyan néz ki a gyakorlatban. A jobb oldalon láthatunk egy vizualizációt egy (kicsi) git repository-ról. Jelenleg két commit van benne -- a kezdő commit, `C0`, és egy őt követő commit, `C1`, ami a `C0`-hoz képesti változásokat tárolja.",
+              "",
+              "Nyomd meg a gombot, hogy létrehozz egy új commit-ot."
+            ],
+            "afterMarkdowns": [
+              "Nagyszerű! A repository tartalmában bekövetkezett változtatásainkat elmentettük egy commit formájában. A commit-nak, amit létrehoztunk `C1` az őse, ami pedig hivatkozza azt a commit-ot, amire ő épül."
+            ],
+            "command": "git commit",
+            "beforeCommand": ""
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Próbáld ki magadtól is! Miután ez az ablak bezárul, hozz létre két commit-ot a szint teljesítéséhez."
+            ]
+          }
+        }
+      ]
     },
   }
 };
