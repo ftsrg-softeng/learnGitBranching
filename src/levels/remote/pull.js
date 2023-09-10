@@ -19,7 +19,8 @@ exports.level = {
     "vi": "Git pull",
     "sl_SI": "Git Pull",
     "pl": "Git pull",
-    "it_IT": "Git Pull"
+    "it_IT": "Git Pull",
+    "hu": "Pull"
   },
   "hint": {
     "en_US": "Just run git pull!",
@@ -38,7 +39,8 @@ exports.level = {
     "vi": "Đơn giản là gõ git pull!",
     "sl_SI": "Samo izvedi git pull!",
     "pl": "Po prostu uruchom git pull!",
-    "it_IT": "Semplicemente git pull!"
+    "it_IT": "Semplicemente git pull!",
+    "hu": "Egyszerűen git pull!"
   },
   "startDialog": {
     "en_US": {
@@ -1043,6 +1045,65 @@ exports.level = {
           }
         }
       ]
-    }
+    },
+    "hu": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Git Pull",
+              "",
+              "Most, hogy már le tudunk tölteni adatot távoli repository-ból `git fetch` segítségével, frissítsük a munkánkat, hogy dolgozni tudjunk a letöltött commit-okkal!",
+              "",
+              "Erre több különböző módszer is van, amint a commit-ok lokálisan elérhetőek. Lehetőség van őket egyszerű, másik branch-en lévő commit-ként kezelni, és olyan parancsokat használni, mint:",
+              "",
+              "* `git cherry-pick o/main`",
+              "* `git rebase o/main`",
+              "* `git merge o/main`",
+              "* ...",
+              "",
+              "A munkafolyamat, amiben először letöltjük (`fetch`), majd beolvasztjuk (`merge`) a commit-okat olyan gyakori, hogy a Git nyújt egy parancsot, ami egyszerre teszi mind a kettőt: ez a `git pull`.."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Először nézzük meg milyen, ha a `fetch`-et és `merge`-et egymás után futtatjuk."
+            ],
+            "afterMarkdowns": [
+              "Ennyi! Letöltöttük a `C3`-at a `fech` segítségével, majd beolvasztottuk a `git merge o/main` használatával. Így már a `main` branch-ünkön megtalálható minden commit, munka, ami a távoli repository-ban megtalálható."
+            ],
+            "command": "git fetch; git merge o/main",
+            "beforeCommand": "git clone; git commit; git fakeTeamwork"
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Próbáljuk ki a `git pull`-t az előbbiek helyett!"
+            ],
+            "afterMarkdowns": [
+              "Pontosan ugyanaz történt! Fontos megjegyezni, hogy a `git pull` tulajdonképpen egy rövidítés egy `git fetch` majd egy `git merge` parancs sorozatára."
+            ],
+            "command": "git pull",
+            "beforeCommand": "git clone; git commit; git fakeTeamwork"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "A későbbiekben lesz még szó a `git pull`-ról, kapcsolóiról és argumentumairól, de egyelőre próbáljuk ki.",
+              "",
+              "Megoldhatod a szintet egy `fetch` és egy `merge` segítségével is, de az eggyel több parancs, mint kéne :P"
+            ]
+          }
+        }
+      ]
+    },
   }
 };
