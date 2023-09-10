@@ -21,6 +21,7 @@ exports.level = {
     "sl_SI": "Relativne Reference (^)",
     "it_IT": "Riferimenti relativi (^)",
     "pl": "Referencje względne (^)",
+    "hu": "Relatív hivatkozások (^)"
   },
   "hint": {
     "en_US": "Remember the Caret (^) operator!",
@@ -40,6 +41,7 @@ exports.level = {
     "sl_SI": "Spomni se na (^) operator!",
     "it_IT": "Ricorda l'operatore Caret(^)... l'accento circonflesso!",
     "pl": "Pamiętaj o operatorze wstawienia (^)!",
+    "hu": "Használd a kalap (^) operátort!"
   },
   "startDialog": {
     "en_US": {
@@ -1393,6 +1395,80 @@ exports.level = {
         },
       ],
     },
-
+    "hu": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Relatív hivatkozások",
+              "",
+              "A fában kizárólagosan a commit hash-ek segítségével mozogni egy picit nyűgös tud lenni. A valóságban nincs egy szép vizualizáció a parancssor mellett, szóval a `git log` parancsot kell használnod a hash-ek megnézéséhez.",
+              "",
+              "Továbbá, a hash-ek nem két karakreresek a való világban. Például, az előző szint alapból kiválasztott commit-jának a hash-e `fed2da64c0efc5293610bdd892f82a58e8cbc5d8`. Nem éppen kényelmes begépelni...",
+              "",
+              "Szerencsére, a Git okosan kezeli a hash-eket. Elegendő annyi karaktert megadni neki, ami a commit egyértelmű azonosításához kell. Jelen esetben, tehát elég begépelni a `fed2` szöveget a fenti hosszú hash helyett."
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Mint ki lett fejtve, a commit-ok hash-ekkel való megadása nem mindig a legkényelmesebb. A Git ezért nyújtja a relatív referenciákat!",
+              "",
+              "A relatív referenciák segítségével a navigálást indíthatod egy könnyen megjegyezhető helyről (pl.: a `bugFix` branch vagy a `HEAD`).",
+              "",
+              "A relatív referenciák rendkívül hasznosak, itt viszont mi csupán két egyszerűt mutatunk be:",
+              "",
+              "* A fában egy commit-tal feljebb lépésre használható: `^`",
+              "* A fában egyszerre több commit-tal feljebb lépésre használható: `~<num>`"
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Beszéljünk először a kalap (^) operátorról. Minden alkalommal, amikor egy referencia neve után írod, azzal a Git-et arra utasítod, hogy a hivatkozott commit ősét keresse meg.",
+              "",
+              "Szóval, a `main^` annyit jelent, hogy a \"`main` első őse\".",
+              "",
+              "A `main^^` az ősének az őse.",
+              "",
+              "Válasszuk ki a `main` ősét:"
+            ],
+            "afterMarkdowns": [
+              "Ennyi! Mennyivel egyszerűbb, mint a commit hash-eket begépelni."
+            ],
+            "command": "git checkout main^",
+            "beforeCommand": "git commit"
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Szintén használhatod a `HEAD`-et relatív hivatkozásokban. Használjuk ezt, hogy párszor feljebb mozogjunk a commit fában."
+            ],
+            "afterMarkdowns": [
+              "Egyszerű! A `HEAD^` segítségével könnyedén mozoghatunk visszafele."
+            ],
+            "command": "git checkout C3; git checkout HEAD^; git checkout HEAD^; git checkout HEAD^",
+            "beforeCommand": "git commit; git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "A szint megoldásához válaszd ki a `bugFix` legfrissebb commit-jának az ősét. Ez le fogja csatolni a HEAD-et.",
+              "",
+              "Ha nagyon akarod, megoldhatod a feladatot a hash megadásával is, de próbáld meg relatív referenciákkal inkább!"
+            ]
+          }
+        }
+      ]
+    },
   }
 };
