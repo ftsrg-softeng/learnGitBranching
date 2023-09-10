@@ -19,7 +19,8 @@ exports.level = {
     "vi": "Giả lập làm việc nhóm",
     "sl_SI": "Lažno Ekipno Delo",
     "pl": "Symulacja pracy zespołowej",
-    "it_IT": "Simulare il lavoro di squadra"
+    "it_IT": "Simulare il lavoro di squadra",
+    "hu": "Csapatmunka szimulálása"
   },
   "hint": {
     "en_US": "Remember you can specify the number of commits to fake",
@@ -38,7 +39,8 @@ exports.level = {
     "vi": "Nhớ rằng bạn có thể chỉ định số lượng commit để giả lập",
     "sl_SI": "Spomni se, da lahko določiš število lažnih commitov.",
     "pl": "Pamiętaj, że możesz określić liczbę symulowanych commitów",
-    "it_IT": "Tieni a mente che puoi specificare il numero di commit da simulare"
+    "it_IT": "Tieni a mente che puoi specificare il numero di commit da simulare",
+    "hu": "Add meg a szimulálandó commit-ok számát!"
   },
   "startDialog": {
     "en_US": {
@@ -960,6 +962,60 @@ exports.level = {
           }
         }
       ]
-    }
+    },
+    "hu": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Közös munka szimulálása",
+              "",
+              "Van egy kis problémánk. Ebben az app-ban meg kell tanítsuk, hogyan tudunk letölteni módosításokat, amik nem tőlünk származnak.",
+              "",
+              "Ez azt jelenti, hogy \"úgy kell tennünk\", mintha a távoli repository-t az egyik munkatársunk / barátunk / fejlesztő társunk frissítette volna néhány commit-tal.",
+              "",
+              "Erre a feladatra, be fogunk vezetni egy új git parancsot: ez lesz a `git fakeTeamwork`."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Alapértemezetten a `git fakeTeamwork` egy commit-ot helyez a `main`-re."
+            ],
+            "afterMarkdowns": [
+              "Így ni! A távoli repository frissült az új commit-tal, amit azonban nem töltöttünk még le (még nem történt `git fetch`)."
+            ],
+            "command": "git fakeTeamwork",
+            "beforeCommand": "git clone"
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Arra is van lehetőség, hogy megadjuk hány commit-ot akarunk létrehozni."
+            ],
+            "afterMarkdowns": [
+              "Egy parancs segítségével szimuláltuk, hogy egy csapattársunk 3 commit-ot helyez el a `foo` branch-en a távoli repository-n."
+            ],
+            "command": "git fakeTeamwork foo 3",
+            "beforeCommand": "git branch foo; git clone"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "A későbbi szintek egyre nehezebbek lesznek, így ez a szint egy áthidaló feladat.",
+              "",
+              "Hozz létre egy távoli repository-t (`git clone`), szimulálj munkát rajta, majd töltsd le a munkát. Ez több korábbi szint egyben!"
+            ]
+          }
+        }
+      ]
+    },
   }
 };
