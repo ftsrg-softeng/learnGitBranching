@@ -19,7 +19,8 @@ exports.level = {
     "vi": "Giới thiệu về clone",
     "sl_SI": "Uvod v Git Clone",
     "pl": "Wstęp do klonowania (clone)",
-    "it_IT": "Introduzione al clone"
+    "it_IT": "Introduzione al clone",
+    "hu": "Klónozás"
   },
   "hint": {
     "en_US": "Just git clone!",
@@ -39,7 +40,8 @@ exports.level = {
     "vi": "Đơn giản là git clone!",
     "sl_SI": "Preprosto samo git clone!",
     "pl": "Po prostu git clone!",
-    "it_IT": "Semplicemente git clone!"
+    "it_IT": "Semplicemente git clone!",
+    "hu": "Simán git clone!"
   },
   "startDialog": {
     "en_US": {
@@ -1066,6 +1068,63 @@ exports.level = {
           }
         }
       ]
-    }
+    },
+    "hu": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Távoli (remote) repository-k",
+              "",
+              "A távoli (remote) repository-k nem annyira bonyolultak. A mai, felhő központú világban könnyű azt gondolni, hogy a távoli repository-k mögött valami mágia áll, de valójában ezek csupán a lokális repository másolatai egy másik számítógépen. Ezt a számítógépet tipikusan interneten keresztül érjük el, ami lehetővé teszi, hogy commit-okat mozgassunk onnan és oda.",
+              "",
+              "A távoli repository-knak van néhány hasznos tulajdonsága:",
+              "",
+              "- Mindenekelőtt, a távoli repository remek biztonsági mentés. A lokális repository-knak meg van az a képessége, hogy fájlokat korábbi verziókra állítsanak vissza, de minden információ lokálisan van tárolva. Ha a munkád másolata meg van más számítógépeken is, akár el is hagyhatod a lokális másolatodat, és folytatni fogod tudni a munkádat.",
+              "",
+              "- De ami még fontosabb, a távoli repository-k lehetővé teszik az együttműködést! Így, hogy a projekt egy másolata máshol van, a barátaid egyszerűen közre tudnak működni.",
+              "",
+              "Népszerűek lettek azok a weboldalak, amik vizualizálják a távoli repository-kat (pl.: [GitHub](https://github.com/)), de fontos, hogy _mindig_ távoli repository-k vannak a háttérben, ezért érdemes megérteni őket!"
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Távoli repository-k létrehozása",
+              "",
+              "Eddig a pillanatig, ez az app arra fókuszált, hogy a _lokális_ repository műveleteit (branch-ek, merge, rebase, ...) értsük. Most viszont szükség lesz egy távoli repository-ra, így kelleni fog egy parancs, ami létrehozza a megfelelő környezetet. A `git clone` lesz ez a parancs.",
+              "",
+              "Egészen pontosan, a `git clone` parancsot a valóságban arra lehet használni, hogy egy távoli repository alapján a _lokális_ repository létre legyen hozva. Ebben az appban ezt szándékosan fordítva fogjuk használni: a `git clone` egy távoli repository-t fog létrehozni a lokális alapján. Bár ez pont a valós működés fordítottja, segíteni fog a klónozás és a távoli repository-k közötti kapcsolat megteremtésében, így maradjuk egyelőre emellett.",
+              ""
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Kezdésként, nézzük meg hogyan néz ki egy távoli repository (a mi vizualizációnkban).",
+              ""
+            ],
+            "afterMarkdowns": [
+              "Ott is van! Készítettünk egy távoli repository-t a projektünkből. Nagyon hasonlóan néz ki, mint a lokális, némi különbséggel, hogy egyszerűbbé tegyük a megkülönböztetést. Későbbi szinteken látni fogjuk hogyan kell a munkánkat megosztani a távoli repository-k segítségével."
+            ],
+            "command": "git clone",
+            "beforeCommand": ""
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "A szint befejezéséhez, klónozd a meglévő repository-t. A valódi tanulás az ezt követő szinteken fog történni."
+            ]
+          }
+        }
+      ]
+    },
   }
 };
