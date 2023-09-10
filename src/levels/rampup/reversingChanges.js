@@ -22,6 +22,7 @@ exports.level = {
     "sl_SI": "Revertanje Sprememb v Gitu",
     "it_IT": "Annullare i cambiamenti in Git",
     "pl": "Odwracanie zmian w Gicie",
+    "hu": "Változások visszavonása"
   },
   "hint": {
     "en_US": "Notice that revert and reset take different arguments.",
@@ -42,6 +43,7 @@ exports.level = {
     "sl_SI": "Revert in reset sprejmeta različne argumente.",
     "it_IT": "Revert e reset hanno parametri diversi.",
     "pl": "Zauważ, że revert i reset przyjmują różne argumenty",
+    "hu": "A revert és reset más argumentumokat fogadnak."
   },
   "startDialog": {
     "en_US": {
@@ -1170,6 +1172,68 @@ exports.level = {
         },
       ],
     },
-
+    "hu": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Változások visszavonása Git-ben",
+              "",
+              "Több különböző módja is van a változások visszavonásának Git-ben. Akárcsak a commit-álásnak, a változások visszavonásának is van alacsony szintű (egyes fájlok kiválasztása) és magas szintű (pontosan hogyan kerülnek visszavonásra a változások) komponense. Mivel ezen app mögött nincsen fájlrendszer, az utóbbira fogunk koncentrálni.",
+              "",
+              "Két fő módja van a változások visszavonásának Git-ben -- az egyik a `git reset`, a másik a `git revert`. A következő ablakban megnézzük mindkettőt.",
+              ""
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "## Git Reset",
+              "",
+              "A `git reset` a branch időben visszafele mozgatásával vonja vissza a változtatást. Ebben az értelemben újra lehet írni a történelmet, mintha a visszavont commit soha meg sem történt volna. place.",
+              "",
+              "Nézzük meg működés közben:"
+            ],
+            "afterMarkdowns": [
+              "Így ni! A Git visszamozgatta a `main` branch-et a `C1`-re. Így a lokális repository-nk olyan állapotban van, mintha `C2` soha meg sem történt volna."
+            ],
+            "command": "git reset HEAD~1",
+            "beforeCommand": "git commit"
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "## Git Revert",
+              "",
+              "Míg a reset kiválóan működik lokális branch-eken, amik csak egy számítógépen vannak jelen, a történelem újraírása nem működik olyan branch-eken, amit mások is használnak.",
+              "",
+              "Hogy visszavonjuk a változtatásokat, *meg kell osztanunk*, hogy milyen változtatásokat vonunk vissza. Ezt csinálja a `git revert`. Nézzük meg működés közben."
+            ],
+            "afterMarkdowns": [
+              "Furcsa! Egy új commit jött létre azután, amit vissza akartunk vonni. Ez azért történt, mert az új commit új változásokat hoz a projektbe, viszont pont azokat a változásokat, amik pont visszavonják a `C2` által tett módosításokat.",
+              "",
+              "A `revert` segítségével megoszthatod másokkal is a módosításaidat."
+            ],
+            "command": "git revert HEAD",
+            "beforeCommand": "git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "A szint megoldásához vond vissza a legfrissebb commit-ot mind a lokális (`local`), mind a távoli (`pushed`) branch-en. Összesen két commit-ot fogsz visszavonni (egyet branch-enként).",
+              "",
+              "Figyelj arra oda, hogy a `pushed` egy távoli (remote), a `local` pedig egy lokális branch -- ennek megfelelően válaszd ki az általad használt módszert!"
+            ]
+          }
+        }
+      ]
+    },
   }
 };
