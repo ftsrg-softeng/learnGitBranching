@@ -19,7 +19,8 @@ exports.level = {
     "vi": "Dị biệt lịch sử",
     "sl_SI": "Razdeljena Zgodovina",
     "pl": "Rozbieżna  historia",
-    "it_IT": "Storico divergente"
+    "it_IT": "Storico divergente",
+    "hu": "Eltérő történet"
   },
   "hint": {
     "en_US": "Check out the ordering from the goal visualization",
@@ -38,7 +39,8 @@ exports.level = {
     "vi": "Kiểm tra kỹ thứ tự trên mô hình mục tiêu",
     "sl_SI": "Preveri vrstni red iz ciljne vizualizacije.",
     "pl": "Przyjrzyj się kolejności na wizualizacji celu",
-    "it_IT": "Controlla l'ordinamento dalla schermata dell'obiettivo"
+    "it_IT": "Controlla l'ordinamento dalla schermata dell'obiettivo",
+    "hu": "Figyelj a sorrendre! A vizualizáció segít!"
   },
   "startDialog": {
     "en_US": {
@@ -2471,6 +2473,149 @@ exports.level = {
           }
         }
       ]
-    }
+    },
+    "hu": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Eltérő történet",
+              "",
+              "Eddig láthattuk hogyan tudunk commit-okat beolvasztani a `pull` és megosztani a `push` segítségével. Ez eddig egyszerű, de akkor miért jelent mégis sokaknak kihívást?",
+              "",
+              "A nehézség akkor jelntkezik, amikor a verzió történet valamiért _eltér_ (_diverging history_ angolul). Lássunk erre egy példát.",
+              ""
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Képzeljük el, hogy leklónozunk egy repository-t hétfőn, és elkezdünk egy új funkción dolgozni. Péntekre elkészült a funkció, és publikálnánk. Azonban a munkatársaink sok-sok kódot írtak a hét alatt, ami a mi munkánkat elavulttá (out of date) tette. Ők a munkájukat a közös távoli repository-ba publikálták, és jelenleg a mi munkánk a projekt *régi* verzióján alapul, ami már nem releváns.",
+              "",
+              "Ebben az esetben a `git push` nem egyértelmű. Ha futtatjuk a `git push` parancsot, akkor a Git-nek módosítania kéne a távoli repository állapotát, hogy a korábbi, hétfői állapotot tükrözze? Vagy meg kéne próbálnia belerakni a mi új kódunkat, anélkül, hogy kiszedné a többiek új kódját? Vagy teljesen ignorálnia kéne a munkánkat, mert az egy elavult állapotra épít?",
+              "",
+              "Amiért ilyenkor sok minden nem egyértelmű (mert a történetek eltérnek), a Git nem fogja engedni a `push` parancs kiadását. Sőt, kényszeríteni fog minket, hogy először olvasszuk be a távoli repository-ban található változtatásokat a saját munkánkban, mielőtt még folytatnánk."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Nézzük meg a szituációt!"
+            ],
+            "afterMarkdowns": [
+              "Semmit nem történt, mert a parancs nem sikerül. A `git push` nem sikerül, mert a legújabb commit, `C3` a `C1`-re épít, ami a távoli repository korábbi legfrissebb állapota volt. A távoli repository azóta frissült, megjelent a `C2`, ezért a Git el fogja utasítani a `push`-t."
+            ],
+            "command": "git push",
+            "beforeCommand": "git clone; git fakeTeamwork; git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Hogyan oldjuk meg ezt a helyzetet? Egyszerű, a munkánkat csupán a távoli branch legfrissebb állapotára kéne építenünk.",
+              "",
+              "Több módon is el lehet ezt érni, de a legegyszerűbb a `rebase`. Nézzük meg ez hogyan néz ki!"
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Próbáljunk meg a `push` előtt egy `rebase`-t..."
+            ],
+            "afterMarkdowns": [
+              "Ennyi! Frissítettük a lokális reprezentációnkat a `git fetch` segítségével, `rebase` használatával a távoli repository új állapotára építettük a munkánkat, és a végén publikáltuk azt `git push` segítségével."
+            ],
+            "command": "git fetch; git rebase o/main; git push",
+            "beforeCommand": "git clone; git fakeTeamwork; git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Van más módja a munkánk frissítésének, ha a távoli repository frissült? Természetesen! Nézzük meg ugyanezt `merge` segítségével.",
+              "",
+              "Bár a `git merge` nem mozgatja a munkánkat, csak létre hoz egy merge commit-ot, ezzel kifejezve, hogy a Git beolvasztotta a távoli repository-ból származó összes módosítást. Ez azért van, mert a távoli branch most egy őse a saját branch-ünknek, így a merge commit a távoli branch összes commit-ját reprezentálja.",
+              "",
+              "Nézzük ezt meg munka közben..."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "És akkor próbáljuk a `merge`-t használni `rebase` helyett..."
+            ],
+            "afterMarkdowns": [
+              "Ennyi! Frissítettük a lokális reprezentációnkat a `git fetch` segítségével, beolvasztottuk a távoli munkát a sajátunkba, és közzétettük a munkánkat `git push` segítségével."
+            ],
+            "command": "git fetch; git merge o/main; git push",
+            "beforeCommand": "git clone; git fakeTeamwork; git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Nagyszerű! Van lehetőség ugyanerre anélkül, hogy ennyi parancsot kiadnánk?",
+              "",
+              "Természetesen. Mint már azt tudjuk, a `git pull` egy rövidítés a `git fetch` és `git merge` kombinációjára. A `git pull --rebase` pedig egy rövidítés a `git fetch` és `git rebase` kettősére!",
+              "",
+              "Nézzük meg ezeket használat közben!"
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Először `--rebase` használatával"
+            ],
+            "afterMarkdowns": [
+              "Ugyanaz mint korábban, csak rövidebb."
+            ],
+            "command": "git pull --rebase; git push",
+            "beforeCommand": "git clone; git fakeTeamwork; git commit"
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "És most egy sima `pull`."
+            ],
+            "afterMarkdowns": [
+              "Megint, ugyanaz mint korábban!"
+            ],
+            "command": "git pull; git push",
+            "beforeCommand": "git clone; git fakeTeamwork; git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Ez a munkafolyamat, amiben letöltjük a változásokat (`fetch`), beolvasztjuk (`merge`) / ráépítünk (`rebase`), majd publikálunk (`push`) elég gyakori. A későbbiekben ennek a munkafolyamatnak majd bonyolultabb változatait is ki fogjuk próbálni, de egyelőre próbáljuk ki ezt.",
+              "",
+              "A szint megoldásához, csináld a következőket:",
+              "",
+              "* Klónozd a repository-t",
+              "* Szimulálj csapatmunkát (1 commit)",
+              "* Módosíts te is valamit (1 commit)",
+              "* Publikáld a munkád *rebase* használatával"
+            ]
+          }
+        }
+      ]
+    },
   }
 };
