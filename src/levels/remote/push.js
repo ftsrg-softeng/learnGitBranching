@@ -22,7 +22,8 @@ exports.level = {
     "vi": "Git push",
     "sl_SI": "Git Push",
     "pl": "Git push",
-    "it_IT": "Git Push"
+    "it_IT": "Git Push",
+    "hu": "Push"
   },
   "hint": {
     "en_US": "Remember you have to clone before you can push!",
@@ -40,7 +41,8 @@ exports.level = {
     "vi": "Nhớ rằng bạn phải clone trước khi push!",
     "sl_SI": "Najprej moraš klonirati, preden lahko pushaš!",
     "pl": "Najpierw sklonuj, potem pushuj!",
-    "it_IT": "Ricorda di clonare il repository prima di usare push!"
+    "it_IT": "Ricorda di clonare il repository prima di usare push!",
+    "hu": "Előbb klónozz, csak utána tudsz push-olni!"
   },
   "startDialog": {
     "en_US": {
@@ -768,6 +770,49 @@ exports.level = {
           }
         }
       ]
-    }
+    },
+    "hu": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Git Push",
+              "",
+              "Szóval le tudtuk tölteni a távoli változtatásokat, és be tudtuk őket olvasztani a lokális munkánkba. Ez mind nagyszerű, de meg is kell tudni osztani a mi lokális munkánkat másokkal.",
+              "",
+              "A munka megosztása, feltöltése a letöltés ellentéte: ezért ezt a parancsot `git push`-nak nevezzük (a `git pull` után).",
+              "",
+              "A `git push` parancs felelőssége a lokális változások feltöltése egy megadott távoli repository-ba, és a távoli repository frissítése, hogy a commit-ok ott megjelenjenek. Miután a `git push` sikeresen lefutott, a társaink le tudják tölteni a munkánkat a távoli repository-ból.",
+              "",
+              "Tulajdonképpen úgy is lehet a `git push`-ra gondolni, mint a munka \"publikálására\". Természetesen ennek a parancsnak is vannak sajátosságai, amikre majd még vissza fogunk térni, de először kezdjük az egyszerűvel.",
+              "",
+              "*Megjegyzés -- A `git push` viselkedése, amikor nincs argumentuma a Git `push.default` beállításától függ. Ennek a beállításnak az alapértelmezett értéke a Git verziójától függ, de ebben az app-ban mi az `upstream` értéket fogjuk használni. Ennek nem sok mindent kéne befolyásolnia, de érdemes megnézni egy valódi projekt esetén ezt a beállítást.*"
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Itt van némi munkánk, ami nincs meg a távoli repository-ban. Töltsük fel őket!"
+            ],
+            "afterMarkdowns": [
+              "Így ni! A távoli repository megkapta a `C2` commit-ot, a `main` branch a távoli repository-ban frissítve lett, hogy a `C2`-re mutasson, és a lokális repository-nkban a távoli branch (`o/main`) is frissült. Minden szinkronban van!"
+            ],
+            "command": "git push",
+            "beforeCommand": "git clone; git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "A szint teljesítéséhez, egyszerűen ossz meg két commit-ot a távoli repository-val. Ugyanakkor gatyát felkötni, mert a későbbiekben egyre bonyolultabb lesz a feladat!"
+            ]
+          }
+        }
+      ]
+    },
   }
 };
