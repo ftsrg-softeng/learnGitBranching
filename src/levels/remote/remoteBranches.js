@@ -20,7 +20,8 @@ exports.level = {
     "vi": "Nhánh từ xa",
     "sl_SI": "Oddaljeni Branchi",
     "pl": "Zdalne gałęzie",
-    "it_IT": "Rami Remoti"
+    "it_IT": "Rami Remoti",
+    "hu": "Távoli branch-ek"
   },
   "hint": {
     "en_US": "Pay attention to the ordering -- commit on main first!",
@@ -40,7 +41,8 @@ exports.level = {
     "vi": "Chú ý đến thứ tự -- commit trên nhánh main trước!",
     "sl_SI": "Bodi pozoren na vrsti red -- commitaj najprej na main!",
     "pl": "Zwróć uwagę na kolejność -- najpierw zatwierdzaj na main",
-    "it_IT": "Presta attenzione all'ordine -- fai prima un commit sul main!"
+    "it_IT": "Presta attenzione all'ordine -- fai prima un commit sul main!",
+    "hu": "Figyelj a sorrendre! Először a main-re commit-álj!"
   },
   "startDialog": {
     "en_US": {
@@ -1142,6 +1144,69 @@ exports.level = {
           "options": {
             "markdowns": [
               "Per completare questo livello, fai un commit una volta dal `main` e una volta dopo aver eseguito il checkout su `o/main`. Questo ti aiuterà a capire come i rami remoti si comportano differentemente, e si aggiornano solo per riflettere lo stato del remoto"
+            ]
+          }
+        }
+      ]
+    },
+    "hu": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Távoli branch-ek",
+              "",
+              "Most, hogy láttuk a `git clone` parancsot működés közben, nézzünk rá mi is változott.",
+              "",
+              "Az első, mint bizonyára észrevetted, hogy egy új branch jelent meg a lokális repository-nkban: `o/main`. A branch-eknek ezt a típusát _távoli_ (remote) branch-eknek nevezzük. A távoli branch-eknek különleges tulajdonságaik vannak, mert egy sajátos céljuk van.",
+              "",
+              "A távoli branch-ek a távoli repository _állapotát_ tükrözik (azt az állapotot, amikor utoljára kommunikáltunk a távoli repository-val). Segítenek megérteni, hogy mi a lokális munka, és mely munkád publikus mások számára. Ennek megértése fontos lépés, mielőtt még munkát osztanánk meg.",
+              "",
+              "A távoli branch-ek speciális tulajdonsága, hogy kiválasztás (checkout) esetén, lecsatolják a `HEAD`-et. Ezt a Git szándékosan teszi, mert nem szabad ezeken a branch-eken közvetlenül dolgozni. Máshol kell dolgoznod, majd megosztani a munkádat a távoli branch-en (ami után a távoli branch frissítve lesz).",
+              "",
+              "Csak tisztázás képpen: A távoli branch-ek a _lokális_ repository-ban vannak, nem a távoliban!!!"
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "### Mi az `o/`?",
+              "",
+              "Felmerülhet, hogy mi is az az `o/` a távoli branch nevek előtt. Ez egy szükséges és elvárt elnevezési konvenció:",
+              "",
+              "* `<remote neve>/<branch neve>`",
+              "",
+              "Ezért, ha ránézünk az `o/main` nevű branch-re, tudjuk, hogy az az `o` nevű remote repository `main` branch-ének az állapotát tükrözi a lokális repository-ban.",
+              "",
+              "A legtöbb fejlesztő `origin`-nak szokta elnevezni a távoli repository-t, nem `o`-nak. Ez annyira gyakori, hogy a Git automatiusan `origin`-nek nevezi el a távoli repository-t, ha `git clone`-t használsz.",
+              "",
+              "Sajnos, az `origin` picit hosszú lenne a mi felületünknek, ezért `o`-nak fogjuk rövidíteni. De jegyezzük meg, hogy egy valódi projekt esetén valószínűleg `origin` lesz a neve!",
+              "",
+              "Nézzük is meg működés közben."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Válasszuk ki a távoli branch-et, és nézzük meg mi történik."
+            ],
+            "afterMarkdowns": [
+              "Mint látni lehet, a Git lecsatolja a `HEAD`-et, és nem frissítette az `o/main`-t, amikor új commit-ot adtunk hozzá. Ennek az az oka, hogy az `o/main` csak akkor frissül, ha frissítjük a távoli branch-eket."
+            ],
+            "command": "git checkout o/main; git commit",
+            "beforeCommand": "git clone"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "A szint teljesítéséhez commit-álj egyszer a `main`-re, majd az `o/main`-re. Ez segíteni for meréteni, hogy a távoli branch-ek másként viselkednek, és kizárólag a távoli repository állapotát mutatják."
             ]
           }
         }
