@@ -21,6 +21,7 @@ exports.level = {
     "it_IT":
       "Dovrai usare almeno un riferimento diretto (hash) per completare questo livello",
     "pl": "Aby ukończyć ten poziom, musisz użyć co najmniej jednej bezpośredniej referencji (hasza).",
+    "hu": "Legalább egy commit-ot a hash-ével kell havatkoznod a szint megoldásához."
   },
   "name": {
     "en_US": "Relative Refs #2 (~)",
@@ -40,7 +41,8 @@ exports.level = {
     "vi": "Tham chiếu tương đối #2 (~)",
     "sl_SI": "Relativne Reference #2 (~)",
     "it_IT": "Riferimenti relativi #2 (~)",
-    "pl": "Referencje względne #2 (~)"
+    "pl": "Referencje względne #2 (~)",
+    "hu": "Relatív referenciák #2 (~)"
   },
   "startDialog": {
     "en_US": {
@@ -1265,6 +1267,74 @@ exports.level = {
         },
       ],
     },
-
+    "hu": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "### A hullám (\"~\") operátor",
+              "",
+              "Tegyük fel, hogy egyszerre sok commit-tal akarsz felfele mozogni a fában. Elég fárasztó lenne annyiszor leírni a `^` operátort, ezért a Git bevezette a hullám (~) operátort.",
+              "",
+              "",
+              "A hullám operátor (opcionálisan) fogad egy számot paraméterként, amivel megadhatod hány commit-tal akarsz feljebb lépni."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Adjuk meg, hogy hány commit-tal akarunk feljebb lépni a `~` operátorral."
+            ],
+            "afterMarkdowns": [
+              "Ennyi! A tömörség a relatív referenciák ereje."
+            ],
+            "command": "git checkout HEAD~4",
+            "beforeCommand": "git commit; git commit; git commit"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "### Branch-ek mozgatása",
+              "",
+              "Most már tudod használni a relatív referenciákat, szóval *használjuk* is őket valamire!",
+              "",
+              "A relatív referenciák egyik leggyakoribb használati esete a branch-ek mozgatása. Egy branch-et a `-f` kapcsolóval tudsz mozgatni:",
+              "",
+              "`git branch -f main HEAD~3`",
+              "",
+              "Ez a `main` branch-et átmozgatja, hogy az a HEAD harmadik ősére mutasson. A `-f` kapcsoló az angol \"force\" szóból jön, mert ezt a műveletet angolul úgy nevezik, hogy \"forcing a branch\"."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Nézzük meg az előző parancsot működés közben."
+            ],
+            "afterMarkdowns": [
+              "Így ni! A relatív referenciák segítségével tömören tudtunk a `C1`-re hivatkozni, és tudunk átmozgatni a branch-et (`-f`) oda."
+            ],
+            "command": "git branch -f main HEAD~3",
+            "beforeCommand": "git commit; git commit; git commit; git checkout -b bugFix"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "Most, hogy láttuk a relatív referenciákat és branch-ek mozgatását kombinálva, oldjuk meg a segítségükkel a következő szintet.",
+              "",
+              "A szint megoldásához mozgasd a `HEAD`-et, `main`-t és a `bugFix`-et a cél ábrán mutatott helyükre."
+            ]
+          }
+        }
+      ]
+    },
   }
 };
