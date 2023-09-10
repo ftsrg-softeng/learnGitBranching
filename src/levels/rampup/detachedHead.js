@@ -20,7 +20,8 @@ exports.level = {
     'vi': "Tháo đầu cái nào",
     "sl_SI": "Ločevanje tvoje glave - HEAD-a",
     "it_IT": "Perdere la testa (HEAD)",
-    "pl": "Odczep sobie HEAD"
+    "pl": "Odczep sobie HEAD",
+    "hu": "A HEAD lecsatolása"
   },
   "hint": {
     "en_US": "Use the label (hash) on the commit for help!",
@@ -40,6 +41,7 @@ exports.level = {
     "sl_SI": "Uporabi oznako (hash) commita za pomoč!",
     "it_IT": "Usa l'etichetta (hash) sul commit per aiutarti!",
     "pl": "Użyj nazwy commita (hasza)!",
+    "hu": "Használd a commit címkéjét (hash) segítségért!"
   },
   "startDialog": {
     "en_US": {
@@ -1439,6 +1441,83 @@ exports.level = {
         },
       ],
     },
-
+    "hu": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Mozgás a fában",
+              "",
+              "Mielőtt még a Git haladóbb funkcióit megismernénk, fontos megérteni a projekt commit fájában való mozgást.",
+              "",
+              "Miután már könnyedén mozogsz, a Git parancsok ereje megsokszorozódik!",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## HEAD",
+              "",
+              "Először is, beszéljünk a \"HEAD\"-ről. A HEAD egy szimbolikus név, egy mutató az éppen kiválasztott (checkout) commit-ra -- lényegében ez az a commit, amin a módosításaidat elvégzed.",
+              "",
+              "A HEAD mindig a legfrissebb commit-ra mutat a fában. A legtöbb Git parancs, ami módosítja a fát, azzal kezdi, hogy módosítja a HEAD-et.",
+              "",
+              "Alapértelmezetten, a HEAD egy branch-re mutat (pl.: `bugFix`). Ha új commit-ot helyezel el a branch-en, a branch állapota megváltozik, és ez a változás a HEAD-en keresztül figyelhető meg."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Nézzük meg, amiről eddig beszéltünk. Itt most meg fogjuk mutatni a HEAD állapotát egy commit-álás előtt és után."
+            ],
+            "afterMarkdowns": [
+              "Látod? A HEAD mindvégig a `main` branch \"alatt\" rejtőzött!"
+            ],
+            "command": "git checkout C1; git checkout main; git commit; git checkout C2",
+            "beforeCommand": ""
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "### A HEAD lecsatolása",
+              "",
+              "A HEAD lecsatolása annyit jelent, hogy elérjük, hogy a HEAD a branch helyett egy commit-ra mutasson. Így néz ki a lecsatolás előtt:",
+              "",
+              "HEAD -> main -> C1",
+              ""
+            ],
+            "afterMarkdowns": [
+              "A lecsatolást követően pedig:",
+              "",
+              "HEAD -> C1"
+            ],
+            "command": "git checkout C1",
+            "beforeCommand": ""
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "A szint teljesítéséhez csatold le a HEAD-et a `bugFix` branch-ről, és mutasson a commitra inkább.",
+              "",
+              "A commit-ot a hash-ével add meg. Ebben az app-ban a hash-eket a commit-ot reprezentáló körökbe írva lehet látni."
+            ]
+          }
+        }
+      ]
+    },
   }
 };
