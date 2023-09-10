@@ -24,7 +24,8 @@ exports.level = {
     "vi": "Giới thiệu về cherry-pick",
     "sl_SI": "Uvod v Cherry-pick",
     "it_IT": "Introduzione al cherry-pick",
-    "pl": "Wprowadzenie do cherry-pick"
+    "pl": "Wprowadzenie do cherry-pick",
+    "hu": "Cherry-pick"
   },
   "hint": {
     "fr_FR": "git cherry-pick suivi par les noms de commits",
@@ -44,6 +45,7 @@ exports.level = {
     "sl_SI": "git cherry-pick nato pa imena commitov.",
     "it_IT": "git cherry-pick seguito dai nomi dei commit!",
     "pl": "git cherry-pick a po nim nazwy commitów!",
+    "hu": "git cherry-pick a megfelelő commit hash-ekkel!"
   },
   "startDialog": {
     "en_US": {
@@ -1071,6 +1073,63 @@ exports.level = {
           },
         },
       ],
+    },
+    "hu": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## A munka mozgatása",
+              "",
+              "Eddig átnéztük a Git alapjait -- commit-álás, branch-ek, és mozgás a fában. Csupán ezek elegendőek a Git repository-k erejének 90%-os kihasználásához, és a fejlesztők legfőbb igényit kielégítik.",
+              "",
+              "A hátralévő 10% ugyanakkor rendkívül hasznos lehet komplex feladatok esetén (vagy amikor slamasztikába kerültünk). A következőkben arról lesz szó, hogyan mozgassuk a munkánkat a fában, másszóval hogyan mondhatja a fejlesztő, hogy \"Ezt a munkátt itt, ezt pedig ott akarom használni\" egyszerűen és rugalmasan.",
+              "",
+              "Bár bonyolultnak hangzik, valójában egy egyszerű műveletről van szó."
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Git Cherry-pick",
+              "",
+              "Az első parancs a `git cherry-pick`:",
+              "",
+              "* `git cherry-pick <Commit1> <Commit2> <...>`",
+              "",
+              "Egy egy egyszerű módja annak, ha a jelenlegi pozíciónk (`HEAD`) után szeretnénk másolni commit-ok egy sorozatát. A parancs neve az angol \"cherry picking\" kifejezésből jön, ami annyit tesz, hogy \"válogatni\".",
+              "",
+              "Nézzük meg működés közben!",
+              ""
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Van egy repository-nk, ahol némi munkát a `side` branch-en tárolunk, és át akarjuk mozgatni a `main`-re. Ezt meg lehet csinálni a rebase segítségével (amit már tanultunk), de nézzük meg a cherry-pick-et működés közben."
+            ],
+            "afterMarkdowns": [
+              "Ennyi! A `C2` és `C4` commit-okra volt szükségünk, és a Git be is szúrta őket nekünk, míg a `C3`-at nem."
+            ],
+            "command": "git cherry-pick C2 C4",
+            "beforeCommand": "git checkout -b side; git commit; git commit; git commit; git checkout main; git commit;"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "A szint teljesítéshez másolj át munkát a három különböző branch-ről a `main`-re. A cél megtekintésénél láthatod mit kell és milyen sorrendben másolni.",
+              ""
+            ]
+          }
+        }
+      ]
     },
   }
 };
