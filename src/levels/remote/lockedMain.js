@@ -18,7 +18,8 @@ exports.level = {
     "ja": "mainブランチをoriginのmainと同じ状態になるようにリセットする前に、ローカルのmainからfeatureブランチを作成します。",
     "pl": "Stwórz boczną gałąź tematyczną (feature) z lokalnego main, a późnej zsynchronizuj ją z main na origin",
     "vi": "Tạo những nhánh tính năng từ nhánh cục bộ trước khi trả chúng về lại giống như o/main",
-    "it_IT": "Crea il ramo per la feature a partire dal main locale prima di resettarlo al pari del main remoto"
+    "it_IT": "Crea il ramo per la feature a partire dal main locale prima di resettarlo al pari del main remoto",
+    "hu": "Hozz létre egy branch-et a lokális main-ből, mielőtt még reset-elnéd az o/main-re."
   },
   "name": {
     "en_US": "Locked Main",
@@ -36,7 +37,8 @@ exports.level = {
     "ja": "ロックされたmain",
     "pl": "Zablokowany main",
     "vi": "Nhánh chính bị khóa (Locked Main)",
-    "it_IT": "Main bloccato"
+    "it_IT": "Main bloccato",
+    "hu": "Zárolt main"
   },
   "startDialog": {
     "en_US": {
@@ -691,6 +693,46 @@ exports.level = {
               "## La soluzione",
               "",
               "Crea un nuovo ramo chiamato feature e carica quest'ultimo sul repository remoto. Inoltre reimposta il tuo ramo main affinché sia al pari con il remoto altrimenti potresti andare in contro a dei problemi la prossima volta che proverai ad effettuare un pull e i commit di qualcun'altro andranno in conflitto con i tuoi."
+            ]
+          }
+        }
+      ]
+    },
+    "hu": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Remote Rejected!",
+              "",
+              "Ha nagy csapatban dolgozunk, gyakori szituáció, hogy a `main` branch zárolva van, és csak Pull Request segítségével lehet bele változásokat olvasztani. Ha direktbe a `main`-re commit-áluk lokálisan, és `push`-olni próbálunk, akkor a következőhöz nagyon hasonló hibaüzenettel fogunk találkozni:",
+              "",
+              "```",
+              " ! [remote rejected] main -> main (TF402455: Pushes to this branch are not permitted; you must use a pull request to update this branch.)",
+              "```"
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Miért lett elutasítva?",
+              "",
+              "A távoli repository azért utasította el, mert közvetlenül a `main`-re commit-áltunk, amikor az a szabály, hogy Pull Request-et kellett volna használnunk.",
+              "",
+              "Még az is lehet, hogy követni akartuk a munkafolyamatot, és létrehozni az új branch-et, arra commit-olni, azt `push`-olni, majd egy Pull Request-et létrehozni, azonban véletlenül a `main`-re mentek a commit-ok, és most nincs tovább."
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## A megoldás",
+              "",
+              "Hozz létre egy új branch-et `feature` néven, és `push`-old azt a távoli repository-ba. Továbbá `reset` resgítségével állítsd vissza a `main` állapotát, hogy megegyezzen a távoli branch állapotával. Ha ez utóbbit nem teszed meg, a következő `pull`-nál problémákba fogsz ütközni!"
             ]
           }
         }
