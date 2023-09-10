@@ -20,7 +20,8 @@ exports.level = {
     "vi": "Git Fetch",
     "sl_SI": "Git Fetch",
     "pl": "Git fetch",
-    "it_IT": "Git Fetch"
+    "it_IT": "Git Fetch",
+    "hu": "Fetch"
   },
   "hint": {
     "en_US": "just run git fetch!",
@@ -40,7 +41,8 @@ exports.level = {
     "vi": "Gõ git fetch là được!",
     "sl_SI": "Le izvedi git fetch!",
     "pl": "Po prostu uruchom git fetch!",
-    "it_IT": "Semplicemente git fetch!"
+    "it_IT": "Semplicemente git fetch!",
+    "hu": "Egyszerűen git fetch!"
   },
   "startDialog": {
     "en_US": {
@@ -1352,6 +1354,79 @@ exports.level = {
           "options": {
             "markdowns": [
               "Per completare il livello, digita `git fetch` per scaricare tutti i commit!"
+            ]
+          }
+        }
+      ]
+    },
+    "hu": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## Git Fetch",
+              "",
+              "A távoli repository-kkal való munka a motorháztető alatt arról szól, hogy repository-k**ba**, és repository-k**ból** mozgatunk adatot. Amíg commit-okat tudunk oda-vissza küldözgetni, bármilyen, Git által követhető munkát meg tudunk osztani: legyen az programkód, fájlok, szerelmes levelek, ...",
+              "",
+              "A következőkben arról lesz szó, hogyan mozgatunk adatot távoli repository-k**ból**. Erre a `git fetch` parancs való.",
+              "",
+              "Meg fogjuk figyelni, hogy ennek hatására frissíteni fogjuk a távoli repository-ról lokálisan tárolt információnkat, majd a _távoli_ branch-ek frissülni fognak, hogy megfeleljenek az új információnak. Ez szépen kapcsolódik a távoli branch-ekről korábban tanultakhoz."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "Még mielőtt belemennénk a `git fetch` részleteibe, nézzük meg működés közben! Van egy távoli repository-nk két commit-tal, ami nincs meg a lokális repository-nkban."
+            ],
+            "afterMarkdowns": [
+              "Így ni! A `C2` és `C3` commit-ok letöltésre kerültek a lokális repository-ba, és az `o/main` távoli branch  is frissült ennek megfelelően."
+            ],
+            "command": "git fetch",
+            "beforeCommand": "git clone; git fakeTeamwork 2"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "### Mit csinál a `fetch`",
+              "",
+              "A `git fetch` pontosan két dolgot csinál:",
+              "",
+              "* Előszór letölti azokat a commit-okat, amik megvannak a távoli repository-ban, de nincsenek meg a lokálisban.",
+              "* Majd frissíti, hogy hova mutatnak a távoli branch-ek (pl.: `o/main`)",
+              "",
+              "A `git fetch` tulajdonképpen frissíti a mi képünket a távoli repository-ról, hogy az valóban azt reprezentálja, ami a távoli repository _valódi_ állapota éppen most.",
+              "",
+              "Ha visszaemlékezünk, azt mondtuk, hogy a távoli branch-ek a távoli repository állapotát tükrözik, amikor utoljára kommunikáltunk vele. A `git fetch` egy mód a távoli repository-val való kommunikálásra. Remélhetőleg így már érthető a `git fetch` és a távoli branch-ek közötti kapcsolat.",
+              "",
+              "A `git fetch` tipikusan az interneten keresztül kommunikál (pl.: `http://` vagy `git://` protokollon).",
+              ""
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "### Mit _nem_ csinál a `fetch`",
+              "",
+              "A `git fetch` semmit nem változtat a lokális állapoton. Nem fogja frissíteni a `main` branch-et, és nem fog egyik fájlhoz sem hozzányúlni.",
+              "",
+              "Ezt fontos megérteni, mert sokan azt gondolják, hogy a `git fetch` eléri, hogy a lokális állapotuk megegyezzen a távolival. Meglehet, hogy letölti az összes szükséges információt ehhez, de ténylegesen _nem_ változtat semmit a lokális fájlokon. Erre más parancsok valók, amikre vissza fogunk majd térni.",
+              "",
+              "Szóval, gondoljunk úgy a `git fetch`-re, mint egy letöltés lépésre."
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "A szint teljesítéséhez használd a `git fetch` parancsot, az összes commit letöltéséhez!"
             ]
           }
         }
