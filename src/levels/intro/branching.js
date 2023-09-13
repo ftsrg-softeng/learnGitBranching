@@ -1714,7 +1714,7 @@ exports.level = {
               "Szuper, készen állsz a branch-ek kipróbálására. Amint ez az ablak bezárul, ",
               "hozz létre egy új, `bugFix` nevű branch-et, és válaszd ki azt.",
               "",
-              "Tipp: ha létre akarsz hozni egy új branch-et, ÉS ki is akarod választani azonnal, By the way, here's a shortcut: if you want to create a new ",
+              "Tipp: ha létre akarsz hozni egy új branch-et, ÉS ki is akarod választani azonnal, ",
               "használd a `git checkout -b [branch neve]` parancsot."
             ]
           }

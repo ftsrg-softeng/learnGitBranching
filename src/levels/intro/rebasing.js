@@ -1265,7 +1265,7 @@ exports.level = {
             "markdowns": [
               "## Rebase",
               "",
-              "A második módszer a különböző branch-eken tárolt munkák kombinálására a *rebase*. A *rebase* lényegében fogja a commit-okat, \"lemásolja\" őketm és a másolatokat lerakja valahova máshova.",
+              "A második módszer a különböző branch-eken tárolt munkák kombinálására a *rebase*. A *rebase* lényegében fogja a commit-okat, \"lemásolja\" őket és a másolatokat lerakja valahova máshova.",
               "",
               "Bár ez furcsán hangzik, a rebase előnye, hogy egy szép, lineáris verziótörténet az eredménye. A commit-ok listája, verziótörténet sokkal átláthatóbb lesz, ha csak rebase van megengedve.",
               "",

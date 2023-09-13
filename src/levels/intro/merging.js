@@ -1369,7 +1369,7 @@ exports.level = {
             "markdowns": [
               "## Branch-ek és a merge-elés",
               "",
-              "Nagyszerű! Most már tudjuk hogyan commit-áljunk és hogyan hozzunk létre branch-eket. A következőkben arról lesz szó, hogyan tudjuk összekombinálni a különböző branch-eket tárolt munkánkat. Ez lehetővé fogja számunkra tenni, hogy létrehozzunk egy branch-et, azon lefeljesszünk egy új funkciót, majd visszaolvasszuk az eredeti forrásba.",
+              "Nagyszerű! Most már tudjuk hogyan commit-áljunk és hogyan hozzunk létre branch-eket. A következőkben arról lesz szó, hogyan tudjuk összekombinálni a különböző branch-eken tárolt munkánkat. Ez lehetővé fogja számunkra tenni, hogy létrehozzunk egy branch-et, azon lefeljesszünk egy új funkciót, majd visszaolvasszuk az eredeti forrásba.",
               "",
               "Az első módszer a \"visszaolvasztásra\" amit meg fogunk vizsgálni a `git merge` lesz. A merge git esetén egy speciális commit-ot hoz létre, aminek két különböző őse van. Egy commit két őssel azt jelenti, hogy \"Szeretném ennek a commit-nak a tartalmát használni, a másiknak a tartalmát használni, *továbbá* az összes ősük tartalmát használni.\"",
               "",
