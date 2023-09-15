@@ -1106,7 +1106,7 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "Kezdésként, nézzük meg hogyan néz ki egy távoli repository (a mi vizualizációnkban).",
+              "Kezdésként nézzük meg, hogyan néz ki egy távoli repository (a mi vizualizációnkban).",
               ""
             ],
             "afterMarkdowns": [
@@ -1120,7 +1120,7 @@ exports.level = {
           "type": "ModalAlert",
           "options": {
             "markdowns": [
-              "A szint befejezéséhez, klónozd a meglévő repository-t. A valódi tanulás az ezt követő szinteken fog történni."
+              "A szint befejezéséhez klónozd a meglévő repository-t. A valódi tanulás az ezt követő szinteken fog történni."
             ]
           }
         }
