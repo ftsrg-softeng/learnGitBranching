@@ -975,7 +975,7 @@ exports.level = {
               "",
               "Ez azt jelenti, hogy \"úgy kell tennünk\", mintha a távoli repository-t az egyik munkatársunk / barátunk / fejlesztő társunk frissítette volna néhány commit-tal.",
               "",
-              "Erre a feladatra, be fogunk vezetni egy új git parancsot: ez lesz a `git fakeTeamwork`."
+              "Erre a feladatra be fogunk vezetni egy új git parancsot: ez lesz a `git fakeTeamwork`."
             ]
           }
         },
@@ -983,7 +983,7 @@ exports.level = {
           "type": "GitDemonstrationView",
           "options": {
             "beforeMarkdowns": [
-              "Alapértemezetten a `git fakeTeamwork` egy commit-ot helyez a `main`-re."
+              "Alapértelmezetten a `git fakeTeamwork` egy commit-ot helyez a `main`-re."
             ],
             "afterMarkdowns": [
               "Így ni! A távoli repository frissült az új commit-tal, amit azonban nem töltöttünk még le (még nem történt `git fetch`)."
