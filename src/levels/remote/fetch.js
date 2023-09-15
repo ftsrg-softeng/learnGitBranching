@@ -1396,7 +1396,7 @@ exports.level = {
               "",
               "A `git fetch` pontosan két dolgot csinál:",
               "",
-              "* Előszór letölti azokat a commit-okat, amik megvannak a távoli repository-ban, de nincsenek meg a lokálisban.",
+              "* Először letölti azokat a commit-okat, amik megvannak a távoli repository-ban, de nincsenek meg a lokálisban.",
               "* Majd frissíti, hogy hova mutatnak a távoli branch-ek (pl.: `o/main`)",
               "",
               "A `git fetch` tulajdonképpen frissíti a mi képünket a távoli repository-ról, hogy az valóban azt reprezentálja, ami a távoli repository _valódi_ állapota éppen most.",

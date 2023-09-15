@@ -2484,7 +2484,7 @@ exports.level = {
               "",
               "Eddig láthattuk hogyan tudunk commit-okat beolvasztani a `pull` és megosztani a `push` segítségével. Ez eddig egyszerű, de akkor miért jelent mégis sokaknak kihívást?",
               "",
-              "A nehézség akkor jelntkezik, amikor a verzió történet valamiért _eltér_ (_diverging history_ angolul). Lássunk erre egy példát.",
+              "A nehézség akkor jelentkezik, amikor a verzió történet valamiért _eltér_ (_diverging history_ angolul). Lássunk erre egy példát.",
               ""
             ]
           }
@@ -2594,7 +2594,7 @@ exports.level = {
               "És most egy sima `pull`."
             ],
             "afterMarkdowns": [
-              "Megint, ugyanaz mint korábban!"
+              "Megint ugyanaz mint korábban!"
             ],
             "command": "git pull; git push",
             "beforeCommand": "git clone; git fakeTeamwork; git commit"

@@ -732,7 +732,7 @@ exports.level = {
             "markdowns": [
               "## A megoldás",
               "",
-              "Hozz létre egy új branch-et `feature` néven, és `push`-old azt a távoli repository-ba. Továbbá `reset` resgítségével állítsd vissza a `main` állapotát, hogy megegyezzen a távoli branch állapotával. Ha ez utóbbit nem teszed meg, a következő `pull`-nál problémákba fogsz ütközni!"
+              "Hozz létre egy új branch-et `feature` néven, és `push`-old azt a távoli repository-ba. Továbbá `reset` segítségével állítsd vissza a `main` állapotát, hogy megegyezzen a távoli branch állapotával. Ha ez utóbbit nem teszed meg, a következő `pull`-nál problémákba fogsz ütközni!"
             ]
           }
         }

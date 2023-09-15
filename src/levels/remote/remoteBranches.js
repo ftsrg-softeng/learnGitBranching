@@ -1206,7 +1206,7 @@ exports.level = {
           "type": "ModalAlert",
           "options": {
             "markdowns": [
-              "A szint teljesítéséhez commit-álj egyszer a `main`-re, majd az `o/main`-re. Ez segíteni for meréteni, hogy a távoli branch-ek másként viselkednek, és kizárólag a távoli repository állapotát mutatják."
+              "A szint teljesítéséhez commit-álj egyszer a `main`-re, majd az `o/main`-re. Ez segíteni for megérteni, hogy a távoli branch-ek másként viselkednek, és kizárólag a távoli repository állapotát mutatják."
             ]
           }
         }
