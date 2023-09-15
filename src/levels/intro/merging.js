@@ -1422,7 +1422,7 @@ exports.level = {
               "* Commit-álj egyszer",
               "* Válaszd ki a `main`-t a `git checkout` segítségével",
               "* Commit-álj mégegyszer",
-              "* Merge-d a `bugFix` branch-et a `main`-be a `git merge` használatával",
+              "* Merge-öld a `bugFix` branch-et a `main`-be a `git merge` használatával",
               "",
               "*Ha újra meg akarod nézni ezt az ablakod, használd az `objective` parancsot!*"
             ]

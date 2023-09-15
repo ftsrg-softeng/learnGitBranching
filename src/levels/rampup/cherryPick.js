@@ -1084,7 +1084,7 @@ exports.level = {
               "",
               "Eddig átnéztük a Git alapjait -- commit-álás, branch-ek, és mozgás a fában. Csupán ezek elegendőek a Git repository-k erejének 90%-os kihasználásához, és a fejlesztők legfőbb igényit kielégítik.",
               "",
-              "A hátralévő 10% ugyanakkor rendkívül hasznos lehet komplex feladatok esetén (vagy amikor slamasztikába kerültünk). A következőkben arról lesz szó, hogyan mozgassuk a munkánkat a fában, másszóval hogyan mondhatja a fejlesztő, hogy \"Ezt a munkátt itt, ezt pedig ott akarom használni\" egyszerűen és rugalmasan.",
+              "A hátralévő 10% ugyanakkor rendkívül hasznos lehet komplex feladatok esetén (vagy amikor slamasztikába kerültünk). A következőkben arról lesz szó, hogyan mozgassuk a munkánkat a fában, másszóval hogyan mondhatja a fejlesztő, hogy \"Ezt a munkát itt, ezt pedig ott akarom használni\" egyszerűen és rugalmasan.",
               "",
               "Bár bonyolultnak hangzik, valójában egy egyszerű műveletről van szó."
             ]

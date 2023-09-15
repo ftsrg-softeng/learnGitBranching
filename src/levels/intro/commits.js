@@ -871,7 +871,7 @@ exports.level = {
               "",
               "A git ezek mellett számon tartja, hogy milyen commit-ok történtek és mikor. Ezt nevezzük verziótörténetnek. Ezért fordul elő, hogy a legtöbb commit-nak vannak ősei (ős commit-ok); ezeket mi nyilakkal fogjuk jelölni a vizualizációnkban. A verziótörténet hasznos tud lenni mindenki számára aki a projekten dolgozik.",
               "",
-              "Tudjuk, hogy elsőre félelmetesnek hangzik, de egyenlőre gondolj egy commit-ra, mit a projekt \"pillanatfelvétele\". A commit-ok kevés erőforrást igényelnek, ezért rendkívül gyorsan lehet közöttük váltani.",
+              "Tudjuk, hogy elsőre félelmetesnek hangzik, de egyelőre gondolj egy commit-ra, mint a projekt egy \"pillanatfelvételére\". A commit-ok kevés erőforrást igényelnek, ezért rendkívül gyorsan lehet közöttük váltani.",
             ]
           }
         },
