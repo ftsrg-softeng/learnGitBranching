@@ -1193,7 +1193,7 @@ exports.level = {
             "beforeMarkdowns": [
               "## Git Reset",
               "",
-              "A `git reset` a branch időben visszafele mozgatásával vonja vissza a változtatást. Ebben az értelemben újra lehet írni a történelmet, mintha a visszavont commit soha meg sem történt volna. place.",
+              "A `git reset` a branch időben visszafele mozgatásával vonja vissza a változtatást. Ebben az értelemben újra lehet írni a történelmet, mintha a visszavont commit soha meg sem történt volna.",
               "",
               "Nézzük meg működés közben:"
             ],
