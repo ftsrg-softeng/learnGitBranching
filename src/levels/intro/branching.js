@@ -1703,7 +1703,7 @@ exports.level = {
               "ami picit túl van terhelve (rengeteg különböző dolgot csinál a paramétereinek a függvényében). Ezek a feladatok a ",
               "`checkout`-ot fogják használni a `switch` helyett, mert a `switch` még kísérleti fázisban van, és a szintaxisa változhat a jövőben. ",
               "Mindenesetre, te használhatod az új `switch` parancsot is ebben az appban.",
-              "<a href=\"https://git-scm.com/docs/git-switch\" target=\"_blank\">Itt</a> találsz további tészleteket.* "
+              "<a href=\"https://git-scm.com/docs/git-switch\" target=\"_blank\">Itt</a> találsz további részleteket.* "
             ]
           }
         },
